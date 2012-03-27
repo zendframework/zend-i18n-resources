@@ -24,12 +24,12 @@
  */
 return array(
     // Zend_Captcha_ReCaptcha
-    "Missing captcha fields" => "Chýba captcha pole",
-    "Failed to validate captcha" => "Captchu sa nepodarilo overiť",
-    "Captcha value is wrong: %value%" => "Hodnota captchy neni správna: %value%",
+    "Missing captcha fields" => "Manjka varnostna koda",
+    "Failed to validate captcha" => "Varnostne kode ni bilo mogoče preveriti",
+    "Captcha value is wrong: %value%" => "Napačna varnostna koda: %value%",
 
     // Zend_Captcha_Word
-    "Empty captcha value" => "Hodnota captchy nebola zadaná",
-    "Captcha ID field is missing" => "Chýba pole captcha ID",
-    "Captcha value is wrong" => "Chybná hodnota catpcha",
+    "Empty captcha value" => "Prazna varnostna koda",
+    "Captcha ID field is missing" => "Polje ID varnostne kode manjka",
+    "Captcha value is wrong" => "Varnostna koda je napačna",
 );
