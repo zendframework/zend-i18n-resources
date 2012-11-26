@@ -20,16 +20,16 @@
  */
 
 /**
- * EN-Revision: 30.Jul.2011
+ * TR-Revision: 28.Sept.2012
  */
 return array(
     // Zend_Captcha_ReCaptcha
-    "Missing captcha fields"          => "Die Captcha-Felder fehlen",
-    "Failed to validate captcha"      => "Die Prüfung des Captchas ist fehlgeschlagen",
-    "Captcha value is wrong: %value%" => "Der Captcha-Wert %value% ist falsch",
+    "Missing captcha fields" => "Eksik captcha alanı",
+    "Failed to validate captcha" => "Captcha doğrulaması başarısız oldu",
+    "Captcha value is wrong: %value%" => "Captcha da ki karakterleri yanlış girdiniz: %value%",
 
     // Zend_Captcha_Word
-    "Empty captcha value"             => "Der Captcha-Wert ist leer",
-    "Captcha ID field is missing"     => "Das Captcha-ID-Feld fehlt",
-    "Captcha value is wrong"          => "Der Captcha-Wert ist falsch",
+    "Empty captcha value" => "Boş captcha boşluğu",
+    "Captcha ID field is missing" => "Captcha kimlik alanı eksik",
+    "Captcha value is wrong" => "Captcha değeri yanlış",
 );
