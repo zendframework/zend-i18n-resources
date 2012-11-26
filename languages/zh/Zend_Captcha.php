@@ -20,16 +20,16 @@
  */
 
 /**
- * EN-Revision: 30.Jul.2011
+ * ZH-Revision: 09.Nov.2012
  */
 return array(
     // Zend_Captcha_ReCaptcha
-    "Missing captcha fields"          => "Die Captcha-Felder fehlen",
-    "Failed to validate captcha"      => "Die Prüfung des Captchas ist fehlgeschlagen",
-    "Captcha value is wrong: %value%" => "Der Captcha-Wert %value% ist falsch",
+    "Missing captcha fields" => "没有找到验证码区域",
+    "Failed to validate captcha" => "验证码校验失败",
+    "Captcha value is wrong: %value%" => "验证码不匹配: %value%",
 
     // Zend_Captcha_Word
-    "Empty captcha value"             => "Der Captcha-Wert ist leer",
-    "Captcha ID field is missing"     => "Das Captcha-ID-Feld fehlt",
-    "Captcha value is wrong"          => "Der Captcha-Wert ist falsch",
+    "Empty captcha value" => "请输入验证码",
+    "Captcha ID field is missing" => "没有找到验证码区域",
+    "Captcha value is wrong" => "验证码不匹配",
 );
