@@ -20,16 +20,16 @@
  */
 
 /**
- * EN-Revision: 30.Jul.2011
+ * FR-Revision: 17.Dec.2012
  */
 return array(
     // Zend_Captcha_ReCaptcha
-    "Missing captcha fields" => "Manjka varnostna koda",
-    "Failed to validate captcha" => "Varnostne kode ni bilo mogoče preveriti",
-    "Captcha value is wrong: %value%" => "Napačna varnostna koda: %value%",
+    "Missing captcha fields" => "Les champs du captcha sont absents",
+    "Failed to validate captcha" => "Échec lors de la validation du captcha",
+    "Captcha value is wrong: %value%" => "La valeur du captcha est incorrecte : %value%",
 
     // Zend_Captcha_Word
-    "Empty captcha value" => "Prazna varnostna koda",
-    "Captcha ID field is missing" => "Polje ID varnostne kode manjka",
-    "Captcha value is wrong" => "Varnostna koda je napačna",
+    "Empty captcha value" => "La valeur du captcha est vide",
+    "Captcha ID field is missing" => "L'ID du captcha est absent",
+    "Captcha value is wrong" => "La valeur du captcha est incorrecte",
 );
