@@ -48,6 +48,6 @@ final class Resources
      */
     public static function getPatternForValidator()
     {
-        return '%s/Zend_Validate.php';
+        return '%s/Zend_Validator.php';
     }
 }
