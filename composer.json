@@ -8,7 +8,7 @@
         "translations"
     ],
     "require": {
-        "php": ">=5.3.23"
+        "php": ">=5.5"
     },
     "autoload": {
       "classmap": [
