@@ -129,12 +129,12 @@ return array(
     "File '%value%' is not readable or does not exist" => "Le fichier '%value%' n'est pas lisible ou n'existe pas",
 
     // Zend\Validator\File\ImageSize
-    "Maximum allowed width for image '%value%' should be '%maxwidth%' but '%width%' detected" => "La largeur maximale pour l'image '%value%' devrait être de '%maxwidth%', mais largeur de '%width%' détectée",
-    "Minimum expected width for image '%value%' should be '%minwidth%' but '%width%' detected" => "La largeur minimale pour l'image '%value%' devrait être de '%minwidth%', mais largeur de '%width%' détectée",
-    "Maximum allowed height for image '%value%' should be '%maxheight%' but '%height%' detected" => "La hauteur maximale pour l'image '%value%' devrait être de '%maxheight%', mais hauteur de '%height%' détectée",
-    "Minimum expected height for image '%value%' should be '%minheight%' but '%height%' detected" => "La hauteur maximale pour l'image '%value%' devrait être de '%minheight%', mais hauteur de '%height%' détectée",
-    "The size of image '%value%' could not be detected" => "La taille de l'image '%value%' n'a pas pu être détectée",
-    "File '%value%' is not readable or does not exist" => "Le fichier '%value%' n'est pas lisible ou n'existe pas",
+    "Maximum allowed width for image should be '%maxwidth%' but '%width%' detected" => "La largeur maximale pour l'image devrait être de '%maxwidth%', mais largeur de '%width%' détectée",
+    "Minimum expected width for image should be '%minwidth%' but '%width%' detected" => "La largeur minimale pour l'image devrait être de '%minwidth%', mais largeur de '%width%' détectée",
+    "Maximum allowed height for image should be '%maxheight%' but '%height%' detected" => "La hauteur maximale pour l'image devrait être de '%maxheight%', mais hauteur de '%height%' détectée",
+    "Minimum expected height for image should be '%minheight%' but '%height%' detected" => "La hauteur maximale pour l'image devrait être de '%minheight%', mais hauteur de '%height%' détectée",
+    "The size of image could not be detected" => "La taille de l'image n'a pas pu être détectée",
+    "File is not readable or does not exist" => "Le fichier n'est pas lisible ou n'existe pas",
 
     // Zend\Validator\File\IsCompressed
     "File '%value%' is not compressed, '%type%' detected" => "Le fichier '%value%' n'est pas compressé, '%type%' détecté",
