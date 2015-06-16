@@ -21,6 +21,10 @@ return array(
     "The input contains non alphabetic characters" => "O valor de entrada contém caracteres não alfabéticos",
     "The input is an empty string" => "O valor de entrada é uma string vazia",
 
+    // Zend\I18n\Validator\DateTime
+    "Invalid type given. String expected" => "O tipo especificado é inválido, o valor deve ser string",
+    "The input does not appear to be a valid datetime" => "O valor de entrada não parece ser uma data e hora válida",
+
     // Zend\I18n\Validator\IsFloat
     "Invalid type given. String, integer or float expected" => "O tipo especificado é inválido, o valor deve ser float, string, ou inteiro",
     "The input does not appear to be a float" => "O valor de entrada não parece ser to tipo float",
@@ -28,6 +32,11 @@ return array(
     // Zend\I18n\Validator\IsInt
     "Invalid type given. String or integer expected" => "O tipo especificado é inválido, o valor deve ser string ou inteiro",
     "The input does not appear to be an integer" => "O valor de entrada não parece ser do tipo inteiro",
+
+    // Zend\I18n\Validator\PhoneNumber
+    "The input does not match a phone number format" => "O valor de entrada não é um número de telefone",
+    "The country provided is currently unsupported" => "O país fornecido não é suportado no momento",
+    "Invalid type given. String expected" => "O tipo especificado é inválido, o valor deve ser uma string",
 
     // Zend\I18n\Validator\PostCode
     "Invalid type given. String or integer expected" => "O tipo especificado é inválido, o valor deve ser string ou inteiro",
@@ -44,6 +53,11 @@ return array(
     "The input is not between '%min%' and '%max%', inclusively" => "O valor de entrada não está entre '%min%' e '%max%', inclusivamente",
     "The input is not strictly between '%min%' and '%max%'" => "O valor de entrada não está exatamente entre '%min%' e '%max%'",
 
+    // Zend\Validator\Bitwise
+    "The input has no common bit set with '%control%'" => "O valor de entrada não possui o bit comum definido como '%control%'",
+    "The input doesn't have the same bits set as '%control%'" => "O valor de entrada não possui o mesmo conjunto de bits do que '%control%'",
+    "The input has common bit set with '%control%'" => "O valor de entrada possui o mesmo conjunto de bits do que '%control%'",
+
     // Zend\Validator\Callback
     "The input is not valid" => "O valor de entrada não é válido",
     "An exception has been raised within the callback" => "Uma exceçao foi lançada na chamada de retorno",
@@ -54,7 +68,7 @@ return array(
     "Invalid type given. String expected" => "O tipo especificado é inválido, o valor deve ser string",
     "The input contains an invalid amount of digits" => "O valor de entrada contém uma quantidade inválida de dígitos",
     "The input is not from an allowed institute" => "O valor de entrada não vem de uma instituição autorizada",
-    "The input seems to be an invalid creditcard number" => "O valor de entrada parece ser um número de cartão de crédito inválido",
+    "The input seems to be an invalid credit card number" => "O valor de entrada parece ser um número de cartão de crédito inválido",
     "An exception has been raised while validating the input" => "Uma exceçao foi lançada durante a validação do valor de entrada",
 
     // Zend\Validator\Csrf
@@ -91,80 +105,80 @@ return array(
     "The input exceeds the allowed length" => "O valor de entrada excede o comprimento permitido",
 
     // Zend\Validator\Explode
-    "Invalid type given. String expected" => "O tipo especificado é inválido, o valor deve ser do tipo string",
+    "Invalid type given" => "O tipo especificado é inválido",
 
-    // Zend\Validator\File_Count
+    // Zend\Validator\File\Count
     "Too many files, maximum '%max%' are allowed but '%count%' are given" => "Há muitos arquivos, são permitidos no máximo '%max%', mas '%count%' foram fornecidos",
     "Too few files, minimum '%min%' are expected but '%count%' are given" => "Há poucos arquivos, são esperados no mínimo '%min%', mas '%count%' foram fornecidos",
 
-    // Zend\Validator\File_Crc32
-    "File '%value%' does not match the given crc32 hashes" => "O arquivo '%value%' não corresponde a hash crc32 fornecido",
+    // Zend\Validator\File\Crc32
+    "File does not match the given crc32 hashes" => "O arquivo não corresponde a hash crc32 fornecida",
     "A crc32 hash could not be evaluated for the given file" => "Não foi possível avaliar uma hash crc32 para o arquivo fornecido",
-    "File '%value%' is not readable or does not exist" => "O arquivo '%value%' não pode ser lido ou não existe",
+    "File is not readable or does not exist" => "O arquivo não pode ser lido ou não existe",
 
-    // Zend\Validator\File_ExcludeExtension
-    "File '%value%' has a false extension" => "O arquivo '%value%' possui uma extensão incorreta",
-    "File '%value%' is not readable or does not exist" => "O arquivo '%value%' não pode ser lido ou não existe",
-
-    // Zend\Validator\File_Exists
-    "File '%value%' does not exist" => "O arquivo '%value%' não existe",
-
-    // Zend\Validator\File_Extension
+    // Zend\Validator\File\ExcludeExtension
     "File has an incorrect extension" => "O arquivo possui uma extensão incorreta",
     "File is not readable or does not exist" => "O arquivo não pode ser lido ou não existe",
 
-    // Zend\Validator\File_FilesSize
+    // Zend\Validator\File\Exists
+    "File does not exist" => "O arquivo '%value%' não existe",
+
+    // Zend\Validator\File\Extension
+    "File has an incorrect extension" => "O arquivo possui uma extensão incorreta",
+    "File is not readable or does not exist" => "O arquivo não pode ser lido ou não existe",
+
+    // Zend\Validator\File\FilesSize
     "All files in sum should have a maximum size of '%max%' but '%size%' were detected" => "Todos os arquivos devem ter um tamanho máximo de '%max%', mas um tamanho de '%size%' foi detectado",
     "All files in sum should have a minimum size of '%min%' but '%size%' were detected" => "Todos os arquivos devem ter um tamanho mínimo de '%min%', mas um tamanho de '%size%' foi detectado",
     "One or more files can not be read" => "Um ou mais arquivos não podem ser lidos",
 
-    // Zend\Validator\File_Hash
-    "File '%value%' does not match the given hashes" => "O arquivo '%value%' não corresponde as hashes fornecidas",
+    // Zend\Validator\File\Hash
+    "File does not match the given hashes" => "O arquivo não corresponde as hashes fornecidas",
     "A hash could not be evaluated for the given file" => "Não foi possível avaliar uma hash para o arquivo fornecido",
-    "File '%value%' is not readable or does not exist"  => "O arquivo '%value%' não pode ser lido ou não existe",
+    "File is not readable or does not exist"  => "O arquivo não pode ser lido ou não existe",
 
-    // Zend\Validator\File_ImageSize
-    "Maximum allowed width for image '%value%' should be '%maxwidth%' but '%width%' detected" => "A largura máxima permitida para a imagem '%value%' deveria ser '%maxwidth%', mas '%width%' foi detectada",
-    "Minimum expected width for image '%value%' should be '%minwidth%' but '%width%' detected" => "A largura mínima esperada para a imagem '%value%' deveria ser '%minwidth%', mas '%width%' foi detectada",
-    "Maximum allowed height for image '%value%' should be '%maxheight%' but '%height%' detected" => "A altura máxima permitida para a imagem '%value%' deveria ser '%maxheight%', mas '%height%' foi detectada",
-    "Minimum expected height for image '%value%' should be '%minheight%' but '%height%' detected" => "A altura mínima esperada para a imagem '%value%' deveria ser '%minheight%', mas '%height%' foi detectada",
-    "The size of image '%value%' could not be detected" => "O tamanho da imagem '%value%' não pôde ser detectado",
-    "File '%value%' is not readable or does not exist" => "O arquivo '%value%' não pode ser lido ou não existe",
+    // Zend\Validator\File\ImageSize
+    "Maximum allowed width for image should be '%maxwidth%' but '%width%' detected" => "A largura máxima permitida para a imagem deveria ser '%maxwidth%', mas '%width%' foi detectada",
+    "Minimum expected width for image should be '%minwidth%' but '%width%' detected" => "A largura mínima esperada para a imagem deveria ser '%minwidth%', mas '%width%' foi detectada",
+    "Maximum allowed height for image should be '%maxheight%' but '%height%' detected" => "A altura máxima permitida para a imagem deveria ser '%maxheight%', mas '%height%' foi detectada",
+    "Minimum expected height for image should be '%minheight%' but '%height%' detected" => "A altura mínima esperada para a imagem deveria ser '%minheight%', mas '%height%' foi detectada",
+    "The size of image could not be detected" => "O tamanho da imagem não pôde ser detectado",
+    "File is not readable or does not exist" => "O arquivo não pode ser lido ou não existe",
 
-    // Zend\Validator\File_IsCompressed
-    "File '%value%' is not compressed, '%type%' detected" => "O arquivo '%value%' não está compactado: '%type%' detectado",
-    "The mimetype of file '%value%' could not be detected" => "O mimetype do arquivo '%value%' não pôde ser detectado",
-    "File '%value%' is not readable or does not exist" => "O arquivo '%value%' não pode ser lido ou não existe",
+    // Zend\Validator\File\IsCompressed
+    "File is not compressed, '%type%' detected" => "O arquivo não está compactado: '%type%' detectado",
+    "The mimetype could not be detected from the file" => "O mimetype do arquivo não pôde ser detectado",
+    "File is not readable or does not exist" => "O arquivo não pode ser lido ou não existe",
 
-    // Zend\Validator\File_IsImage
-    "File '%value%' is no image, '%type%' detected" => "O arquivo '%value%' não é uma imagem: '%type%' detectado",
-    "The mimetype of file '%value%' could not be detected" => "O mimetype do arquivo '%value%' não pôde ser detectado",
-    "File '%value%' is not readable or does not exist" => "O arquivo '%value%' não pode ser lido ou não existe",
+    // Zend\Validator\File\IsImage
+    "File is no image, '%type%' detected" => "O arquivo não é uma imagem: '%type%' detectado",
+    "The mimetype could not be detected from the file" => "O mimetype do arquivo não pôde ser detectado",
+    "File is not readable or does not exist" => "O arquivo não pode ser lido ou não existe",
 
-    // Zend\Validator\File_Md5
-    "File '%value%' does not match the given md5 hashes" => "O arquivo '%value%' não corresponde as hashes md5 fornecidas",
-    "A md5 hash could not be evaluated for the given file" => "Não foi possível avaliar uma hash md5 para o arquivo fornecido",
-    "File '%value%' is not readable or does not exist" => "O arquivo '%value%' não pode ser lido ou não existe",
+    // Zend\Validator\File\Md5
+    "File does not match the given md5 hashes" => "O arquivo não corresponde as hashes md5 fornecidas",
+    "An md5 hash could not be evaluated for the given file" => "Não foi possível avaliar uma hash md5 para o arquivo fornecido",
+    "File is not readable or does not exist" => "O arquivo não pode ser lido ou não existe",
 
-    // Zend\Validator\File_MimeType
-    "File '%value%' has a false mimetype of '%type%'" => "O arquivo '%value%' tem o mimetype incorreto: '%type%'",
-    "The mimetype of file '%value%' could not be detected" => "O mimetype do arquivo '%value%' não pôde ser detectado",
-    "File '%value%' is not readable or does not exist" => "O arquivo '%value%' não pode ser lido ou não existe",
+    // Zend\Validator\File\MimeType
+    "File has an incorrect mimetype of '%type%'" => "O arquivo tem o mimetype incorreto: '%type%'",
+    "The mimetype could not be detected from the file" => "O mimetype do arquivo não pôde ser detectado",
+    "File is not readable or does not exist" => "O arquivo não pode ser lido ou não existe",
 
-    // Zend\Validator\File_NotExists
-    "File '%value%' exists" => "O arquivo '%value%' existe",
+    // Zend\Validator\File\NotExists
+    "File exists" => "O arquivo existe",
 
-    // Zend\Validator\File_Sha1
-    "File '%value%' does not match the given sha1 hashes" => "O arquivo '%value%' não corresponde as hashes sha1 fornecidas",
+    // Zend\Validator\File\Sha1
+    "File does not match the given sha1 hashes" => "O arquivo não corresponde as hashes sha1 fornecidas",
     "A sha1 hash could not be evaluated for the given file" => "Não foi possível avaliar uma hash sha1 para o arquivo fornecido",
-    "File '%value%' is not readable or does not exist" => "O arquivo '%value%' não pode ser lido ou não existe",
+    "File is not readable or does not exist" => "O arquivo não pode ser lido ou não existe",
 
-   // Zend\Validator\File_Size
+   // Zend\Validator\File\Size
     "Maximum allowed size for file is '%max%' but '%size%' detected" => "O tamanho máximo permitido para o arquivo é '%max%', mas '%size%' foi detectado",
     "Minimum expected size for file is '%min%' but '%size%' detected" => "O tamanho mínimo esperado para o arquivo é '%min%', mas '%size%' foi detectado",
     "File is not readable or does not exist" => "O arquivo não pode ser lido ou não existe",
 
-    // Zend\Validator\File_Upload
+    // Zend\Validator\File\Upload
     "File '%value%' exceeds the defined ini size" => "O arquivo '%value%' excede o tamanho definido na configuração",
     "File '%value%' exceeds the defined form size" => "O arquivo '%value%' excede o tamanho definido do formulário",
     "File '%value%' was only partially uploaded" => "O arquivo '%value%' foi apenas parcialmente enviado",
@@ -176,7 +190,7 @@ return array(
     "File '%value%' was not found" => "O arquivo '%value%' não foi encontrado",
     "Unknown error while uploading file '%value%'" => "Erro desconhecido ao enviar o arquivo '%value%'",
 
-    // Zend\Validator\File_UploadFile
+    // Zend\Validator\File\UploadFile
     "File exceeds the defined ini size" => "O arquivo excede o tamanho definido na configuração",
     "File exceeds the defined form size" => "O arquivo excede o tamanho definido do formulário",
     "File was only partially uploaded" => "O arquivo foi apenas parcialmente enviado",
@@ -188,10 +202,10 @@ return array(
     "File was not found" => "O arquivo não foi encontrado",
     "Unknown error while uploading file" => "Erro desconhecido ao enviar o arquivo",
 
-    // Zend\Validator\File_WordCount
-    "Too much words, maximum '%max%' are allowed but '%count%' were counted" => "Há muitas palavras, são permitidas no máximo '%max%', mas '%count%' foram contadas",
+    // Zend\Validator\File\WordCount
+    "Too many words, maximum '%max%' are allowed but '%count%' were counted" => "Há muitas palavras, são permitidas no máximo '%max%', mas '%count%' foram contadas",
     "Too few words, minimum '%min%' are expected but '%count%' were counted" => "Há poucas palavras, são esperadas no mínimo '%min%', mas '%count%' foram contadas",
-    "File '%value%' is not readable or does not exist" => "O arquivo '%value%' não pode ser lido ou não existe",
+    "File is not readable or does not exist" => "O arquivo não pode ser lido ou não existe",
 
     // Zend\Validator\GreaterThan
     "The input is not greater than '%min%'" => "O valor de entrada não é maior do que '%min%'",
@@ -231,6 +245,9 @@ return array(
     "Invalid type given. String expected" => "O tipo especificado é inválido, o valor deve ser uma string",
     "The input does not appear to be a valid IP address" => "O valor de entrada não parece ser um endereço de IP válido",
 
+    // Zend\Validator\IsInstanceOf
+    "The input is not an instance of '%className%'" => "O valor de entrada não é uma instância da de '%className%'",
+
     // Zend\Validator\Isbn
     "Invalid type given. String or integer expected" => "O tipo especificado é inválido, o valor deve ser string ou inteiro",
     "The input is not a valid ISBN number" => "O valor de entrada não é um número ISBN válido",
@@ -248,19 +265,19 @@ return array(
     "The input does not match against pattern '%pattern%'" => "O valor de entrada não corresponde ao padrão '%pattern%'",
     "There was an internal error while using the pattern '%pattern%'" => "Houve um erro interno durante o uso do padrão '%pattern%'",
 
-    // Zend\Validator\Sitemap_Changefreq
+    // Zend\Validator\Sitemap\Changefreq
     "The input is not a valid sitemap changefreq" => "O valor de entrada não é um changefreq (frequência de alterações) de sitemap válido",
     "Invalid type given. String expected" => "O tipo especificado é inválido, o valor deve ser uma string",
 
-    // Zend\Validator\Sitemap_Lastmod
+    // Zend\Validator\Sitemap\Lastmod
     "The input is not a valid sitemap lastmod" => "O valor de entrada não é um lastmod (última modificação) de sitemap válido",
     "Invalid type given. String expected" => "O tipo especificado é inválido, o valor deve ser uma string",
 
-    // Zend\Validator\Sitemap_Loc
+    // Zend\Validator\Sitemap\Loc
     "The input is not a valid sitemap location" => "O valor de entrada não é uma localização de sitemap válida",
     "Invalid type given. String expected" => "O tipo especificado é inválido, o valor deve ser uma string",
 
-    // Zend\Validator\Sitemap_Priority
+    // Zend\Validator\Sitemap\Priority
     "The input is not a valid sitemap priority" => "O valor de entrada não é uma prioridade de sitemap válida",
     "Invalid type given. Numeric string, integer or float expected" => "O tipo especificado é inválido, o valor deve ser um inteiro, um float ou uma string numérica",
 
@@ -272,6 +289,11 @@ return array(
     "Invalid type given. String expected" => "O tipo especificado é inválido, o valor deve ser uma string",
     "The input is less than %min% characters long" => "O tamanho do valor de entrada é inferior a %min% caracteres",
     "The input is more than %max% characters long" => "O tamanho do valor de entrada é superior a %max% caracteres",
+
+    // Zend\Validator\Timezone
+    "Invalid timezone given." => "Fuso horário passado é inválido.",
+    "Invalid timezone location given." => "Localidade do fuso horário passada é inválida.",
+    "Invalid timezone abbreviation given." => "Abreviação do fuso horário passada é inválida.",
 
     // Zend\Validator\Uri
     "Invalid type given. String expected" => "O tipo especificado é inválido, o valor deve ser uma string",
