@@ -11,6 +11,12 @@
  * EN-Revision: 06.Feb.2013
  */
 return array(
+    // Zend\Authentication\Validator\Authentication
+    "Invalid identity" => "Identidade inválida",
+    "Identity is ambiguous" => "Mais de uma identidade encontrada",
+    "Invalid password" => "Senha incorreta",
+    "Authentication failed" => "Autenticação falhou",
+
     // Zend_I18n_Validator_Alnum
     "Invalid type given. String, integer or float expected" => "O tipo especificado é inválido, o valor deve ser float, string, ou inteiro",
     "The input contains characters which are non alphabetic and no digits" => "O valor de entrada contém caracteres que não são alfabéticos e nem dígitos",
