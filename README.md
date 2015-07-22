@@ -75,6 +75,7 @@ class TranslatorDelegator implements DelegatorFactoryInterface
             Resources::getBasePath(),
             Resources::getPatternForCaptcha()
         );
+        return $translator;
     }
 }
 ```
@@ -85,7 +86,7 @@ You would then register this in your configuration:
 return [
     'service_manager' => [
         'delegators' => [
-            'MvcTranslator' => 'TranslatorDelegator',
+            'MvcTranslator' => ['TranslatorDelegator'],
         ],
     ],
 ];
