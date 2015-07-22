@@ -8,9 +8,15 @@
  */
 
 /**
- * EN-Revision: 08.Apr.2015
+ * EN-Revision: 16.Jun.2015
  */
 return array(
+    // Zend\Authentication\Validator\Authentication
+    "Invalid identity" => "Invalid identity",
+    "Identity is ambiguous" => "Identity is ambiguous",
+    "Invalid password" => "Invalid password",
+    "Authentication failed" => "Authentication failed",
+
     // Zend\I18n\Validator\Alnum
     "Invalid type given. String, integer or float expected" => "Invalid type given. String, integer or float expected",
     "The input contains characters which are non alphabetic and no digits" => "The input contains characters which are non alphabetic and no digits",
