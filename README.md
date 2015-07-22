@@ -89,7 +89,7 @@ return [
         'delegators' => [
             'MvcTranslator' => [
                 'TranslatorDelegator',
-            ]
+            ],
         ],
     ],
 ];
