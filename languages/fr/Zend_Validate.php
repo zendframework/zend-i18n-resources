@@ -152,7 +152,7 @@ return array(
     "File '%value%' is not readable or does not exist" => "Le fichier '%value%' n'est pas lisible ou n'existe pas",
 
     // Zend\Validator\File\MimeType
-    "File '%value%' has a false mimetype of '%type%'" => "Le fichier '%value%' a un faux type MIME : '%type%'",
+    "File has an incorrect mimetype of '%type%'" => "Le fichier a un type MIME incorrect : '%type%'",
     "The mimetype of file '%value%' could not be detected" => "Le type MIME du fichier '%value%' n'a pas pu être détecté",
     "File '%value%' is not readable or does not exist" => "Le fichier '%value%' n'est pas lisible ou n'existe pas",
 
