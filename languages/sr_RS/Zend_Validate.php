@@ -13,51 +13,51 @@
 return array(
     // Zend\Authentication\Validator\Authentication
     "Invalid identity" => "Погрешан идентитет",
-    "Identity is ambiguous" => "Идентитет је сумњив",
+    "Identity is ambiguous" => "Идентитет је двосмислен",
     "Invalid password" => "Погрешна лозинка",
     "Authentication failed" => "Неуспела аутентификација",
 
     // Zend\I18n\Validator\Alnum
-    "Invalid type given. String, integer or float expected" => "Погрешан тип унет. Очекиван је текст, цео број или стварни број",
+    "Invalid type given. String, integer or float expected" => "Унет је погрешан тип. Очекиван је String, integer или float",
     "The input contains characters which are non alphabetic and no digits" => "Унос садржи карактере који нису алфабетски и нису бројеви",
-    "The input is an empty string" => "Унет је празан текст",
+    "The input is an empty string" => "Унет је празан string",
 
     // Zend\I18n\Validator\Alpha
-    "Invalid type given. String expected" => "Погрешан тип унет. Очекиван је текст",
+    "Invalid type given. String expected" => "Унет је погрешан тип. Очекиван је String",
     "The input contains non alphabetic characters" => "Унос садржи не-алфабетске карактере",
-    "The input is an empty string" => "Унет је празан текст",
+    "The input is an empty string" => "Унет је празан string",
 
     // Zend\I18n\Validator\DateTime
-    "Invalid type given. String expected" => "Погрешан тип унет. Очекиван је текст",
-    "The input does not appear to be a valid datetime" => "Унет је неисправан датум и време",
+    "Invalid type given. String expected" => "Унет је погрешан тип. Очекиван је String",
+    "The input does not appear to be a valid datetime" => "Унет је неисправан datetime",
 
     // Zend\I18n\Validator\IsFloat
-    "Invalid type given. String, integer or float expected" => "Погрешан тип унет. Очекиван је текст, цео број или стварни број",
+    "Invalid type given. String, integer or float expected" => "Унет је погрешан тип. Очекиван је String, integer или float",
     "The input does not appear to be a float" => "Унос није стварни број",
 
     // Zend\I18n\Validator\IsInt
-    "Invalid type given. String or integer expected" => "Погрешан тип унет. Очекиван је текст или цео број",
+    "Invalid type given. String or integer expected" => "Унет је погрешан тип. Очекиван је String или integer",
     "The input does not appear to be an integer" => "Унос није цео број",
 
     // Zend\I18n\Validator\PhoneNumber
     "The input does not match a phone number format" => "Унос не одговара формату телефонског броја",
     "The country provided is currently unsupported" => "Одабрана земља тренутно није подржана",
-    "Invalid type given. String expected" => "Погрешан тип унет. Очекиван је текст",
+    "Invalid type given. String expected" => "Унет је погрешан тип. Очекиван је String",
 
     // Zend\I18n\Validator\PostCode
-    "Invalid type given. String or integer expected" => "Погрешан тип унет. Очекиван је текст или цео број",
+    "Invalid type given. String or integer expected" => "Унет је погрешан тип. Очекиван је String или integer",
     "The input does not appear to be a postal code" => "Унос није поштански број",
     "An exception has been raised while validating the input" => "Дошло је до грешке приликом провере уноса",
 
     // Zend\Validator\Barcode
     "The input failed checksum validation" => "Унос није прошао проверу вредности",
     "The input contains invalid characters" => "Унос садржи неисправне карактере",
-    "The input should have a length of %length% characters" => "Унос треба да има дужину од %length% карактера",
-    "Invalid type given. String expected" => "Погрешан тип унет. Очекиван је текст",
+    "The input should have a length of %length% characters" => "Дозвољени број карактера је %length%",
+    "Invalid type given. String expected" => "Унет је погрешан тип. Очекиван је String",
 
     // Zend\Validator\Between
-    "The input is not between '%min%' and '%max%', inclusively" => "Унос није између '%min%' и '%max%', инклузивно",
-    "The input is not strictly between '%min%' and '%max%'" => "Унос није искључиво између '%min%' и '%max%'",
+    "The input is not between '%min%' and '%max%', inclusively" => "Унос није искључиво између '%min%' и '%max%",
+    "The input is not strictly between '%min%' and '%max%'" => "Унос није стриктно између '%min%' и '%max%'",
 
     // Zend\Validator\Bitwise
     "The input has no common bit set with '%control%'" => "Унос нема подразумевани бит подешен са '%control%'",
@@ -66,27 +66,27 @@ return array(
 
     // Zend\Validator\Callback
     "The input is not valid" => "Унос је неисправан",
-    "An exception has been raised within the callback" => "Дошло је до грешке приликом позива",
+    "An exception has been raised within the callback" => "Дошло је до грешке приликом извршавања 'callback' функције",
 
     // Zend\Validator\CreditCard
     "The input seems to contain an invalid checksum" => "Унос садржи неисправну вредност",
     "The input must contain only digits" => "Унос мора да садржи само бројеве",
-    "Invalid type given. String expected" => "Погрешан тип унет. Очекиван је текст",
-    "The input contains an invalid amount of digits" => "Унос садржи неисправан број цифара",
+    "Invalid type given. String expected" => "Унет је погрешан тип. Очекиван је String",
+    "The input contains an invalid amount of digits" => "Унос садржи недозвољен број цифара",
     "The input is not from an allowed institute" => "Унос није од овлашћеног института",
     "The input seems to be an invalid credit card number" => "Унет је неисправан број кредитне картице",
     "An exception has been raised while validating the input" => "Дошло је до грешке приликом провере уноса",
 
     // Zend\Validator\Csrf
-    "The form submitted did not originate from the expected site" => "Форма није поднета са очекиваног сајта",
+    "The form submitted did not originate from the expected site" => "Послати подаци не потичу са очекиваног сајта",
 
     // Zend\Validator\Date
-    "Invalid type given. String, integer, array or DateTime expected" => "Погрешан тип унет. Очекиван је текст, цео број, низ или датум",
+    "Invalid type given. String, integer, array or DateTime expected" => "Унет је погрешан тип. Очекиван је String, integer, array или DateTime",
     "The input does not appear to be a valid date" => "Унет је неисправан датум",
     "The input does not fit the date format '%format%'" => "Унос не одговара формату датума '%format%'",
 
     // Zend\Validator\DateStep
-    "Invalid type given. String, integer, array or DateTime expected" => "Погрешан тип унет. Очекиван је текст, цео број, низ или датум",
+    "Invalid type given. String, integer, array or DateTime expected" => "Унет је погрешан тип. Очекиван је String, integer, array или DateTime",
     "The input does not appear to be a valid date" => "Унет је неисправан датум",
     "The input does not fit the date format '%format%'" => "Унос не одговара формату датума '%format%'",
     "The input is not a valid step" => "Унос није исправан корак",
@@ -97,11 +97,11 @@ return array(
 
     // Zend\Validator\Digits
     "The input must contain only digits" => "Унос мора да садржи само бројеве",
-    "The input is an empty string" => "Унет је празан текст",
-    "Invalid type given. String, integer or float expected" => "Погрешан тип унет. Очекиван је текст, цео број или стварни број",
+    "The input is an empty string" => "Унет је празан string",
+    "Invalid type given. String, integer or float expected" => "Унет је погрешан тип. Очекиван је String, integer или float",
 
     // Zend\Validator\EmailAddress
-    "Invalid type given. String expected" => "Погрешан тип унет. Очекиван је текст",
+    "Invalid type given. String expected" => "Унет је погрешан тип. Очекиван је String",
     "The input is not a valid email address. Use the basic format local-part@hostname" => "Унета је неисправна адреса е-поште. Користите основни формат local-part@hostname",
     "'%hostname%' is not a valid hostname for the email address" => "'%hostname%' није исправан hostname за адресу е-поште",
     "'%hostname%' does not appear to have any valid MX or A records for the email address" => "'%hostname%' нема исправних MX или A записа за адресу е-поште",
@@ -112,7 +112,7 @@ return array(
     "The input exceeds the allowed length" => "Унос превазилази дозвољену дужину",
 
     // Zend\Validator\Explode
-    "Invalid type given" => "Погрешан тип унет",
+    "Invalid type given" => "Унет је погрешан тип",
 
     // Zend\Validator\File\Count
     "Too many files, maximum '%max%' are allowed but '%count%' are given" => "Превише фајлова, дозвољени максимум је '%max%' а унет је '%count%'",
@@ -219,12 +219,12 @@ return array(
     "The input is not greater or equal than '%min%'" => "Унос није већи или једнак од '%min%'",
 
     // Zend\Validator\Hex
-    "Invalid type given. String expected" => "Погрешан тип унет. Очекиван је текст",
+    "Invalid type given. String expected" => "Унет је погрешан тип. Очекиван је String",
     "The input contains non-hexadecimal characters" => "Унос садржи не-хексадецималне карактере",
 
     // Zend\Validator\Hostname
     "The input appears to be a DNS hostname but the given punycode notation cannot be decoded" => "Унос је DNS hostname али дату punycode нотацију је немогуће декодирати",
-    "Invalid type given. String expected" => "Погрешан тип унет. Очекиван је текст",
+    "Invalid type given. String expected" => "Унет је погрешан тип. Очекиван је String",
     "The input appears to be a DNS hostname but contains a dash in an invalid position" => "Унос је DNS hostname али садржи цртицу на погрешној позицији",
     "The input does not match the expected structure for a DNS hostname" => "Унос не одговара очекиваној структури за DNS hostname",
     "The input appears to be a DNS hostname but cannot match against hostname schema for TLD '%tld%'" => "Унос је DNS hostname али не одговара шеми за TLD '%tld%'",
@@ -237,7 +237,7 @@ return array(
 
     // Zend\Validator\Iban
     "Unknown country within the IBAN" => "Непозната земља унутар IBAN-а",
-    "Countries outside the Single Euro Payments Area (SEPA) are not supported" => "Земље изван Single Euro Payments Area (SEPA) нису подржане",
+    "Countries outside the Single Euro Payments Area (SEPA) are not supported" => "Земље изван јединственог подручја плаћања у еврима (SEPA) нису подржане",
     "The input has a false IBAN format" => "Унос има погрешан IBAN формат",
     "The input has failed the IBAN check" => "Унос није прошао IBAN проверу",
 
@@ -246,17 +246,17 @@ return array(
     "No token was provided to match against" => "Токен за проверу није унет",
 
     // Zend\Validator\InArray
-    "The input was not found in the haystack" => "Унос није пронађен у низу",
+    "The input was not found in the haystack" => "Унос није пронађен у захтеваном низу вредности",
 
     // Zend\Validator\Ip
-    "Invalid type given. String expected" => "Погрешан тип унет. Очекиван је текст",
+    "Invalid type given. String expected" => "Унет је погрешан тип. Очекиван је String",
     "The input does not appear to be a valid IP address" => "Унета је неисправна IP адреса",
 
     // Zend\Validator\IsInstanceOf
-    "The input is not an instance of '%className%'" => "Унос није инстанца '%className%'",
+    "The input is not an instance of '%className%'" => "Унос није инстанца класе '%className%'",
 
     // Zend\Validator\Isbn
-    "Invalid type given. String or integer expected" => "Погрешан тип унет. Очекиван је текст или цео број",
+    "Invalid type given. String or integer expected" => "Унет је погрешан тип. Очекиван је String или integer",
     "The input is not a valid ISBN number" => "Унет је неисправан ISBN број",
 
     // Zend\Validator\LessThan
@@ -265,35 +265,35 @@ return array(
 
     // Zend\Validator\NotEmpty
     "Value is required and can't be empty" => "Вредност је обавезна и не може бити празна",
-    "Invalid type given. String, integer, float, boolean or array expected" => "Погрешан тип унет. Очекиван је текст, цео број, стварни број, логички или низ",
+    "Invalid type given. String, integer, float, boolean or array expected" => "Унет је погрешан тип. Очекиван је String, integer, float, boolean или array",
 
     // Zend\Validator\Regex
-    "Invalid type given. String, integer or float expected" => "Погрешан тип унет. Очекиван је текст, цео број или стварни број",
+    "Invalid type given. String, integer or float expected" => "Унет је погрешан тип. Очекиван је String, integer или float",
     "The input does not match against pattern '%pattern%'" => "Унос не одговара шаблону '%pattern%'",
     "There was an internal error while using the pattern '%pattern%'" => "Дошло је до интерне грешке употребом шаблона '%pattern%'",
 
     // Zend\Validator\Sitemap\Changefreq
     "The input is not a valid sitemap changefreq" => "Унет је неисправан sitemap changefreq",
-    "Invalid type given. String expected" => "Погрешан тип унет. Очекиван је текст",
+    "Invalid type given. String expected" => "Унет је погрешан тип. Очекиван је String",
 
     // Zend\Validator\Sitemap\Lastmod
     "The input is not a valid sitemap lastmod" => "Унет је неисправан sitemap lastmod",
-    "Invalid type given. String expected" => "Погрешан тип унет. Очекиван је текст",
+    "Invalid type given. String expected" => "Унет је погрешан тип. Очекиван је String",
 
     // Zend\Validator\Sitemap\Loc
     "The input is not a valid sitemap location" => "Унет је неисправан sitemap location",
-    "Invalid type given. String expected" => "Погрешан тип унет. Очекиван је текст",
+    "Invalid type given. String expected" => "Унет је погрешан тип. Очекиван је String",
 
     // Zend\Validator\Sitemap\Priority
     "The input is not a valid sitemap priority" => "Унет је неисправан sitemap priority",
-    "Invalid type given. Numeric string, integer or float expected" => "Погрешан тип унет. Очекиван је нумерички, цео број или стварни број",
+    "Invalid type given. Numeric string, integer or float expected" => "Унет је погрешан тип. Очекиван је нумерички, цео број или стварни број",
 
     // Zend\Validator\Step
     "Invalid value given. Scalar expected" => "Погрешна вредност унета. Очекивана је скаларна",
     "The input is not a valid step" => "Унос није исправан корак",
 
     // Zend\Validator\StringLength
-    "Invalid type given. String expected" => "Погрешан тип унет. Очекиван је текст",
+    "Invalid type given. String expected" => "Унет је погрешан тип. Очекиван је String",
     "The input is less than %min% characters long" => "Унос је мањи од %min% карактера",
     "The input is more than %max% characters long" => "Унос је већи од %max% карактера",
 
@@ -303,6 +303,6 @@ return array(
     "Invalid timezone abbreviation given." => "Унета је неисправна скраћеница временске зоне.",
 
     // Zend\Validator\Uri
-    "Invalid type given. String expected" => "Погрешан тип унет. Очекиван је текст",
+    "Invalid type given. String expected" => "Унет је погрешан тип. Очекиван је String",
     "The input does not appear to be a valid Uri" => "Унет је неисправан Uri",
 );
