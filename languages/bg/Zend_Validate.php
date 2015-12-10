@@ -8,9 +8,15 @@
  */
 
 /**
- * EN-Revision: 16.Jul.2013
+ * EN-Revision: 16.Jun.2015
  */
 return array(
+    // Zend\Authentication\Validator\Authentication
+    "Invalid identity" => "Invalid identity",
+    "Identity is ambiguous" => "Identity is ambiguous",
+    "Invalid password" => "Невалидна парола",
+    "Authentication failed" => "Authentication failed",
+
     // Zend\I18n\Validator\Alnum
     "Invalid type given. String, integer or float expected" => "Зададен е невалиден тип данни. Очаква се стринг, цяло или реално число",
     "The input contains characters which are non alphabetic and no digits" => "Въведени са символи, които не са букви или числа",
@@ -25,11 +31,11 @@ return array(
     "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се стринг",
     "The input does not appear to be a valid datetime" => "Не е въведена валидна datetime стойност",
 
-    // Zend\I18n\Validator\Float
+    // Zend\I18n\Validator\IsFloat
     "Invalid type given. String, integer or float expected" => "Зададен е невалиден тип данни. Очаква се цяло или реално число",
     "The input does not appear to be a float" => "Не е въведено реално число",
 
-    // Zend\I18n\Validator\Int
+    // Zend\I18n\Validator\IsInt
     "Invalid type given. String or integer expected" => "Зададен е невалиден тип данни. Очаква се цяло число",
     "The input does not appear to be an integer" => "Не е въведено цяло число",
 
@@ -53,6 +59,11 @@ return array(
     "The input is not between '%min%' and '%max%', inclusively" => "Въведената стойност не е между '%min%' и '%max%' включително",
     "The input is not strictly between '%min%' and '%max%'" => "Въведената стойност не е точно между '%min%' и '%max%'",
 
+    // Zend\Validator\Bitwise
+    "The input has no common bit set with '%control%'" => "The input has no common bit set with '%control%'",
+    "The input doesn't have the same bits set as '%control%'" => "The input doesn't have the same bits set as '%control%'",
+    "The input has common bit set with '%control%'" => "The input has common bit set with '%control%'",
+
     // Zend\Validator\Callback
     "The input is not valid" => "Въведена е невалидна стойност",
     "An exception has been raised within the callback" => "По време на заявката беше върнато ново изключение",
@@ -63,7 +74,7 @@ return array(
     "Invalid type given. String expected" => "Зададен е навалиден тип данни. Очаква се стринг",
     "The input contains an invalid amount of digits" => "Въведената стойност съдържа невалиден брой цифри",
     "The input is not from an allowed institute" => "Въведената стойност не е разрешена организация",
-    "The input seems to be an invalid creditcard number" => "Въведената стойност не е валиден номер на кредитна карта",
+    "The input seems to be an invalid credit card number" => "Въведената стойност не е валиден номер на кредитна карта",
     "An exception has been raised while validating the input" => "По време на валидацията беше върнато ново изключение",
 
     // Zend\Validator\Csrf
@@ -75,6 +86,9 @@ return array(
     "The input does not fit the date format '%format%'" => "Въведена стойност не е дата във формат '%format%'",
 
     // Zend\Validator\DateStep
+    "Invalid type given. String, integer, array or DateTime expected" => "Invalid type given. String, integer, array or DateTime expected",
+    "The input does not appear to be a valid date" => "The input does not appear to be a valid date",
+    "The input does not fit the date format '%format%'" => "The input does not fit the date format '%format%'",
     "The input is not a valid step" => "Въведена стойност не е валидна стъпка",
 
     // Zend\Validator\Db\AbstractDb
@@ -196,7 +210,7 @@ return array(
     "Unknown error while uploading file" => "Възникна грешка при качването на файла",
 
     // Zend\Validator\File\WordCount
-    "Too much words, maximum '%max%' are allowed but '%count%' were counted" => "Твърде много думи, очакват се максимум '%max%', но '%count%' бяха открити",
+    "Too many words, maximum '%max%' are allowed but '%count%' were counted" => "Твърде много думи, очакват се максимум '%max%', но '%count%' бяха открити",
     "Too few words, minimum '%min%' are expected but '%count%' were counted" => "Твърде малко думи, очакват се минимум '%min%' но само '%count%' бяха открити",
     "File is not readable or does not exist" => "Файла не може да бъде прочетен или не съществува",
 
@@ -282,6 +296,11 @@ return array(
     "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се стринг",
     "The input is less than %min% characters long" => "Въведената стойност е по-малкa от %min% символа",
     "The input is more than %max% characters long" => "Въведената стойност е по-голяма от %max% символа",
+
+    // Zend\Validator\Timezone
+    "Invalid timezone given." => "Invalid timezone given.",
+    "Invalid timezone location given." => "Invalid timezone location given.",
+    "Invalid timezone abbreviation given." => "Invalid timezone abbreviation given.",
 
     // Zend\Validator\Uri
     "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се стринг",
