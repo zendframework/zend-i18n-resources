@@ -8,38 +8,44 @@
  */
 
 /**
- * EN-Revision: 16.Jul.2013
+ * EN-Revision: 16.Jun.2015
  */
 return array(
+    // Zend\Authentication\Validator\Authentication
+    "Invalid identity" => "Невалидна идентичност",
+    "Identity is ambiguous" => "Неопределена идентичност",
+    "Invalid password" => "Невалидна парола",
+    "Authentication failed" => "Неуспешна идентификация",
+
     // Zend\I18n\Validator\Alnum
-    "Invalid type given. String, integer or float expected" => "Зададен е невалиден тип данни. Очаква се стринг, цяло или реално число",
+    "Invalid type given. String, integer or float expected" => "Зададен е невалиден тип данни. Очаква се низ, цяло или реално число",
     "The input contains characters which are non alphabetic and no digits" => "Въведени са символи, които не са букви или числа",
-    "The input is an empty string" => "Въведен е празен стринг",
+    "The input is an empty string" => "Въведен е празен низ",
 
     // Zend\I18n\Validator\Alpha
-    "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се стринг",
+    "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се низ",
     "The input contains non alphabetic characters" => "Въведени са символи, които не са букви",
-    "The input is an empty string" => "Въведен е празен стринг",
+    "The input is an empty string" => "Въведен е празен низ",
 
     // Zend\I18n\Validator\DateTime
-    "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се стринг",
+    "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се низ",
     "The input does not appear to be a valid datetime" => "Не е въведена валидна datetime стойност",
 
-    // Zend\I18n\Validator\Float
+    // Zend\I18n\Validator\IsFloat
     "Invalid type given. String, integer or float expected" => "Зададен е невалиден тип данни. Очаква се цяло или реално число",
     "The input does not appear to be a float" => "Не е въведено реално число",
 
-    // Zend\I18n\Validator\Int
+    // Zend\I18n\Validator\IsInt
     "Invalid type given. String or integer expected" => "Зададен е невалиден тип данни. Очаква се цяло число",
     "The input does not appear to be an integer" => "Не е въведено цяло число",
 
     // Zend\I18n\Validator\PhoneNumber
     "The input does not match a phone number format" => "Не е въведен телефонен номер във валиден формат",
     "The country provided is currently unsupported" => "Въведената държава в момента не се поддържа",
-    "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се стринг",
+    "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се низ",
 
     // Zend\I18n\Validator\PostCode
-    "Invalid type given. String or integer expected" => "Зададен е невалиден тип данни. Очаква се стринг или цяло число",
+    "Invalid type given. String or integer expected" => "Зададен е невалиден тип данни. Очаква се низ или цяло число",
     "The input does not appear to be a postal code" => "Не е въведен валиден пощенски код",
     "An exception has been raised while validating the input" => "По време на валидацията беше върнато изключение",
 
@@ -47,11 +53,16 @@ return array(
     "The input failed checksum validation" => "Въведената стойност не успя на премине валидацията на контролната сума",
     "The input contains invalid characters" => "Въведената стойност съдържа невалидни символи",
     "The input should have a length of %length% characters" => "Въведената стойност трябва да има дължина от %length% символа",
-    "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се стринг",
+    "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се низ",
 
     // Zend\Validator\Between
     "The input is not between '%min%' and '%max%', inclusively" => "Въведената стойност не е между '%min%' и '%max%' включително",
     "The input is not strictly between '%min%' and '%max%'" => "Въведената стойност не е точно между '%min%' и '%max%'",
+
+    // Zend\Validator\Bitwise
+    "The input has no common bit set with '%control%'" => "Въведената стойност и '%control%' нямат общ битов масив",
+    "The input doesn't have the same bits set as '%control%'" => "Въведената стойност и '%control%' нямат същия битов масив",
+    "The input has common bit set with '%control%'" => "Въведената стойност и '%control%' имат общ битов масив",
 
     // Zend\Validator\Callback
     "The input is not valid" => "Въведена е невалидна стойност",
@@ -60,21 +71,24 @@ return array(
     // Zend\Validator\CreditCard
     "The input seems to contain an invalid checksum" => "Въведената стойност съдържа невалидна контролна сума",
     "The input must contain only digits" => "Въведената стойност трябва да съдържа само цифри",
-    "Invalid type given. String expected" => "Зададен е навалиден тип данни. Очаква се стринг",
+    "Invalid type given. String expected" => "Зададен е навалиден тип данни. Очаква се низ",
     "The input contains an invalid amount of digits" => "Въведената стойност съдържа невалиден брой цифри",
     "The input is not from an allowed institute" => "Въведената стойност не е разрешена организация",
-    "The input seems to be an invalid creditcard number" => "Въведената стойност не е валиден номер на кредитна карта",
+    "The input seems to be an invalid credit card number" => "Въведената стойност не е валиден номер на кредитна карта",
     "An exception has been raised while validating the input" => "По време на валидацията беше върнато ново изключение",
 
     // Zend\Validator\Csrf
     "The form submitted did not originate from the expected site" => "Формата не е изпратена от очаквания сайт",
 
     // Zend\Validator\Date
-    "Invalid type given. String, integer, array or DateTime expected" => "Зададен е невалиден тип данни. Очаква се стринг, цяло число или DateTime",
+    "Invalid type given. String, integer, array or DateTime expected" => "Зададен е невалиден тип данни. Очаква се низ, цяло число или дата",
     "The input does not appear to be a valid date" => "Въведена стойност не е валидна дата",
     "The input does not fit the date format '%format%'" => "Въведена стойност не е дата във формат '%format%'",
 
     // Zend\Validator\DateStep
+    "Invalid type given. String, integer, array or DateTime expected" => "Зададен е невалиден тип данни. Очаква се низ, цяло число, масив или дата",
+    "The input does not appear to be a valid date" => "Въведена стойност не е валидна дата",
+    "The input does not fit the date format '%format%'" => "Въведена стойност не съвпада с формата '%format%'",
     "The input is not a valid step" => "Въведена стойност не е валидна стъпка",
 
     // Zend\Validator\Db\AbstractDb
@@ -83,11 +97,11 @@ return array(
 
     // Zend\Validator\Digits
     "The input must contain only digits" => "Въведената стойност трябва да съдържа само цифри",
-    "The input is an empty string" => "Въведената стойност е празен стринг",
-    "Invalid type given. String, integer or float expected" => "Зададен е невалиден тип данни. Очаква се стринг, цяло или реално число",
+    "The input is an empty string" => "Въведената стойност е празен низ",
+    "Invalid type given. String, integer or float expected" => "Зададен е невалиден тип данни. Очаква се низ, цяло или реално число",
 
     // Zend\Validator\EmailAddress
-    "Invalid type given. String expected" => "Зададен е навалиден тип данни. Очаква се стринг",
+    "Invalid type given. String expected" => "Зададен е навалиден тип данни. Очаква се низ",
     "The input is not a valid email address. Use the basic format local-part@hostname" => "Въведената стойност не е валиден email адрес в базовия формат local-part@hostname",
     "'%hostname%' is not a valid hostname for the email address" => "'%hostname%' не е валидно име на хост за въведения email адрес",
     "'%hostname%' does not appear to have any valid MX or A records for the email address" => "'%hostname%' няма валиден MX запис за въведения email адрес",
@@ -196,7 +210,7 @@ return array(
     "Unknown error while uploading file" => "Възникна грешка при качването на файла",
 
     // Zend\Validator\File\WordCount
-    "Too much words, maximum '%max%' are allowed but '%count%' were counted" => "Твърде много думи, очакват се максимум '%max%', но '%count%' бяха открити",
+    "Too many words, maximum '%max%' are allowed but '%count%' were counted" => "Твърде много думи, очакват се максимум '%max%', но '%count%' бяха открити",
     "Too few words, minimum '%min%' are expected but '%count%' were counted" => "Твърде малко думи, очакват се минимум '%min%' но само '%count%' бяха открити",
     "File is not readable or does not exist" => "Файла не може да бъде прочетен или не съществува",
 
@@ -205,12 +219,12 @@ return array(
     "The input is not greater or equal than '%min%'" => "Въведената стойност не е по-голяма или равна на '%min%'",
 
     // Zend\Validator\Hex
-    "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се стринг",
+    "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се низ",
     "The input contains non-hexadecimal characters" => "Въведената стойност не съдържа само шестнадесетични символи",
 
     // Zend\Validator\Hostname
     "The input appears to be a DNS hostname but the given punycode notation cannot be decoded" => "Въведената стойност е DNS хост име, но зададения пюникод не може да бъде декодиран",
-    "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се стринг",
+    "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се низ",
     "The input appears to be a DNS hostname but contains a dash in an invalid position" => "Въведената стойност е DNS хост име, но съдържа тире на непозволено място",
     "The input does not match the expected structure for a DNS hostname" => "Въведената стойност не съвпада с очакваната структура за DNS хост име",
     "The input appears to be a DNS hostname but cannot match against hostname schema for TLD '%tld%'" => "Въведената стойност е DNS хост име, но не съвпада със схемата на TLD '%tld%'",
@@ -235,14 +249,14 @@ return array(
     "The input was not found in the haystack" => "Въведената стойност не беше открита",
 
     // Zend\Validator\Ip
-    "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се стринг",
+    "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се низ",
     "The input does not appear to be a valid IP address" => "Въведената стойност не е валиден IP адрес",
 
     // Zend\Validator\IsInstanceOf
     "The input is not an instance of '%className%'" => "Не е въведена инстанция на '%className%'",
 
     // Zend\Validator\Isbn
-    "Invalid type given. String or integer expected" => "Зададен е невалиден тип данни. Очаква се стринг или цяло число",
+    "Invalid type given. String or integer expected" => "Зададен е невалиден тип данни. Очаква се низ или цяло число",
     "The input is not a valid ISBN number" => "Въведената стойност не е валиден ISBN номер",
 
     // Zend\Validator\LessThan
@@ -251,39 +265,44 @@ return array(
 
     // Zend\Validator\NotEmpty
     "Value is required and can't be empty" => "Очакваната стойност не може да бъде празна",
-    "Invalid type given. String, integer, float, boolean or array expected" => "Зададен е невалиден тип данни. Очаква се стринг, цяло или реално число, булева стойност или масив",
+    "Invalid type given. String, integer, float, boolean or array expected" => "Зададен е невалиден тип данни. Очаква се низ, цяло или реално число, булева стойност или масив",
 
     // Zend\Validator\Regex
-    "Invalid type given. String, integer or float expected" => "Invalid type given. String, integer or float expected",
-    "The input does not match against pattern '%pattern%'" => "The input does not match against pattern '%pattern%'",
-    "There was an internal error while using the pattern '%pattern%'" => "There was an internal error while using the pattern '%pattern%'",
+    "Invalid type given. String, integer or float expected" => "Зададен е невалиден тип данни. Очаква се низ, цяло или реално число",
+    "The input does not match against pattern '%pattern%'" => "Въведената стойност не съвпада със шаблона '%pattern%'",
+    "There was an internal error while using the pattern '%pattern%'" => "Възникна грешка при употребата на шаблона '%pattern%'",
 
     // Zend\Validator\Sitemap\Changefreq
-    "The input is not a valid sitemap changefreq" => "The input is not a valid sitemap changefreq",
-    "Invalid type given. String expected" => "Invalid type given. String expected",
+    "The input is not a valid sitemap changefreq" => "Въведена е невалидна стойност за changefreq",
+    "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се низ",
 
     // Zend\Validator\Sitemap\Lastmod
     "The input is not a valid sitemap lastmod" => "Въведена е невалидна стойност за lastmod",
-    "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се стринг",
+    "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се низ",
 
     // Zend\Validator\Sitemap\Loc
     "The input is not a valid sitemap location" => "Въведена е невалидна стойност за location",
-    "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се стринг",
+    "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се низ",
 
     // Zend\Validator\Sitemap\Priority
     "The input is not a valid sitemap priority" => "Въведена е невалидна стойност за priority",
-    "Invalid type given. Numeric string, integer or float expected" => "Зададен е невалиден тип данни. Очаква се стринг, цяло или реално число",
+    "Invalid type given. Numeric string, integer or float expected" => "Зададен е невалиден тип данни. Очаква се низ, цяло или реално число",
 
     // Zend\Validator\Step
     "Invalid value given. Scalar expected" => "Зададен е невалиден тип данни. Очаква се скаларен тип",
     "The input is not a valid step" => "Въведената стойност не е валидна стъпка",
 
     // Zend\Validator\StringLength
-    "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се стринг",
+    "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се низ",
     "The input is less than %min% characters long" => "Въведената стойност е по-малкa от %min% символа",
     "The input is more than %max% characters long" => "Въведената стойност е по-голяма от %max% символа",
 
+    // Zend\Validator\Timezone
+    "Invalid timezone given." => "Зададена е невалидна времева зона.",
+    "Invalid timezone location given." => "Зададено е невалидно местоположение на времева зона.",
+    "Invalid timezone abbreviation given." => "Зададена е невалидна абревиатура на времева зона.",
+
     // Zend\Validator\Uri
-    "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се стринг",
+    "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се низ",
     "The input does not appear to be a valid Uri" => "Въведената стойност не е валиден URI",
 );
