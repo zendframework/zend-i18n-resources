@@ -11,7 +11,7 @@
  * DA-Revision: 15.Oct.2015
  */
 
-return array(
+return [
     // Zend\Authentication\Validator\Authentication
     "Invalid identity" => "Ugyldig bruger",
     "Identity is ambiguous" => "Denne bruger findes allerede",
@@ -307,4 +307,4 @@ return array(
     // Zend\Validator\Uri
     "Invalid type given. String expected" => "Ugyldig indtastning. Indtast streng",
     "The input does not appear to be a valid Uri" => "Indtastningen ligner ikke en gyldig Uri",
-);
+];

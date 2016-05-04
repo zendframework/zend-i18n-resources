@@ -10,7 +10,7 @@
 /**
  * DA-Revision: 15.Oct.2015
  */
-return array(
+return [
     // Zend\Captcha\ReCaptcha
     "Missing captcha fields" => "Captcha felter mangler",
     "Failed to validate captcha" => "Validering af captcha fejlede",
@@ -20,4 +20,4 @@ return array(
     "Empty captcha value" => "Tom captcha værdi",
     "Captcha ID field is missing" => "Captcha ID felt mangler",
     "Captcha value is wrong" => "Captcha værdi er forkert",
-);
+];

@@ -14,7 +14,14 @@
             <property name="ignoreBlankLines" value="false"/>
         </properties>
     </rule>
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="1000"/>
+            <property name="absoluteLineLimit" value="0"/>
+        </properties>
+    </rule>
 
     <!-- Paths to check -->
     <file>src</file>
+    <file>languages</file>
 </ruleset>
