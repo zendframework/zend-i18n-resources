@@ -1,0 +1,9 @@
+docs_dir: doc/book
+site_dir: doc/html
+pages:
+    - index.md
+    - Usage: usage.md
+site_name: zend-i18n-resources
+site_description: zend-i18n-resources
+repo_url: 'https://github.com/zendframework/zend-i18n-resources'
+copyright: 'Copyright (c) 2016 <a href="http://www.zend.com/">Zend Technologies USA Inc.</a>'
