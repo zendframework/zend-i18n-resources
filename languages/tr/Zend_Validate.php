@@ -10,7 +10,7 @@
 /**
  * EN-Revision: 28.Sept.2012
  */
-return array(
+return [
     // Zend_I18n_Validator_Alnum
     "Invalid type given. String, integer or float expected" => "Geçersiz tür verildi, Dize, tamsayı ya da ondalık sayı bekleniyor",
     "The input contains characters which are non alphabetic and no digits" => "Girdi, harf ve rakam olmayan karakterler içeriyor",
@@ -264,4 +264,4 @@ return array(
     // Zend_Validator_Uri
     "Invalid type given. String expected" => "Yanlış tür verildi. Dizge bekleniyor",
     "The input does not appear to be a valid Uri" => "Girdi geçerli bir Uri olarak görünmüyor",
-);
+];

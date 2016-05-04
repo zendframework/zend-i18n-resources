@@ -11,7 +11,7 @@
 /**
  * FR-Revision: 29.Sept.2013
  */
-return array(
+return [
     // Zend\I18n\Validator\Alnum
     "Invalid type given. String, integer or float expected" => "Type invalide. Chaîne, entier ou flottant attendu",
     "The input contains characters which are non alphabetic and no digits" => "L'entrée contient des caractères non alphabétiques et non numériques",
@@ -281,4 +281,4 @@ return array(
     // Zend\Validator\Uri
     "Invalid type given. String expected" => "Type invalide. Chaîne attendue",
     "The input does not appear to be a valid Uri" => "L'entrée ne semble pas être une URI valide",
-);
+];

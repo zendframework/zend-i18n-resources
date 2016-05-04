@@ -1,48 +1,52 @@
+sudo: false
+
 language: php
 
-php:
-  - 5.3
-  - 5.4
-  - 5.5
-  - 5.6
-  - 7
-  - hhvm
+branches:
+  except:
+    - /^release-\d+\.\d+\.\d+.*$/
+    - /^ghgfk-.*$/
 
-services:
-  - memcached
-  - redis-server
+cache:
+  directories:
+    - $HOME/.composer/cache
+    - vendor
+    - $HOME/.local
+    - zf-mkdoc-theme
+
+env:
+  global:
+    - SITE_URL: https://zendframework.github.io/zend-i18n-resources
+    - GH_USER_NAME: "Matthew Weier O'Phinney"
+    - GH_USER_EMAIL: matthew@weierophinney.net
+    - GH_REF: github.com/zendframework/zend-i18n-resources.git
+    - secure: "F+Y77+SehnuOFPrdiqwv/nKlPgYVC4r0aVibolM0fmBfa4Re+T9ApPivVQ5kdylSJfavA+/kljfMWY1uPlHaekO4Pdi7bj6qNbZ6kWybkXCxAoLgzA/a8+/nKWAafJnFie8qbajmUqJtL1FF5QGMu72FKlS0kUvaMnpW/iJadt3xJ3lDtFre1ndZEn+TZ6Me5KHx278R93DWM1lhkIlokh+vnCO2rNKAxLFffIsTYo/gnQdKhq6j4irWWyGLzNdzTwL1HfVU6xj2cvQJg+Q+TFuuqjMDuneZgZas+INOTV460jY9w74agWDMT8se1NN97ucvctL9h0A7FtFcvz2yAR6x/TbMEPg2pahMJEhxS0AK5YmuFrqOTBQryer2jAARhKkGJudQcqQdf7cMG3sJiLch4PtBZ86bzRq4QwBCot68D+l9HIXcUH/Qlt2io/BH+WCNIPW67xVUTGg+6B84CVKuf9vNgHk45KNLY1HNrxdSbRltWvU+i+tvCn+/QJZB/PwbTGyYjMew5FuAQjq2InwBmrhcZcbU6YXxQim/neLSOkBElnOaOciquJEmnRkPMbwo3ds+tS4/Jq6tu7LsEmcMSODD8E+W/xtSJ4J8Vr2lQ1/GnSK9OglEdU5N9lxfmG+iDghx0sawYuv2oqk6N+bZGJBBsf2Ac+HZCdwo2Yk="
+
+matrix:
+  fast_finish: true
+  include:
+    - php: 5.6
+      env:
+        - CS_CHECK=true
+        - DEPLOY_DOCS="$(if [[ $TRAVIS_BRANCH == 'master' && $TRAVIS_PULL_REQUEST == 'false' ]]; then echo -n 'true' ; else echo -n 'false' ; fi)"
+        - PATH="$HOME/.local/bin:$PATH"
+  
 
 before_install:
-  - pear list --allchannels
+  - phpenv config-rm xdebug.ini || return 0
+  - travis_retry composer self-update
 
 install:
-  - if [[ $TRAVIS_PHP_VERSION != '5.6' && $TRAVIS_PHP_VERSION != 'hhvm' && $TRAVIS_PHP_VERSION != 'hhvm-nightly' && $TRAVIS_PHP_VERSION != '7' ]]; then phpenv config-rm xdebug.ini;  fi
-  - sudo apt-get install parallel
-  - composer install --no-interaction --prefer-source
-
-before_script:
-  - cp tests/TestConfiguration.php.travis tests/TestConfiguration.php
-  - if [[ $TRAVIS_PHP_VERSION = '5.6' ]]; then mkdir -p build/coverage; fi
+  - travis_retry composer install --no-interaction --prefer-source
+  - composer show --installed
 
 script:
-  # Run tests for the various components in parallel
-  - if [[ $TRAVIS_PHP_VERSION = '5.6' ]]; then ls -d tests/ZendTest/* | grep -v 'tests/ZendTest/_files' | grep -v 'tests/ZendTest/AllTests' | parallel --gnu -P 0 'echo "Running {} tests"; php ./vendor/bin/phpunit -c tests/phpunit.xml.dist --colors=always --coverage-php build/coverage/coverage-{/.}.cov {};' || exit 1; fi
-  - if [[ $TRAVIS_PHP_VERSION != '5.6' ]]; then ls -d tests/ZendTest/* | grep -v 'tests/ZendTest/_files' | grep -v 'tests/ZendTest/AllTests' | parallel --gnu -P 0 'echo "Running {} tests"; php ./vendor/bin/phpunit -c tests/phpunit.xml.dist --colors=always {};' || exit 1; fi
+  - if [[ $CS_CHECK == 'true' ]]; then composer cs-check ; fi
+  - if [[ $DEPLOY_DOCS == "true" && "$TRAVIS_TEST_RESULT" == "0" ]]; then wget -O theme-installer.sh "https://raw.githubusercontent.com/zendframework/zf-mkdoc-theme/master/theme-installer.sh" ; chmod 755 theme-installer.sh ; ./theme-installer.sh ; fi
 
-  # Run coding standard checks in parallel
-  - if [[ $TRAVIS_PHP_VERSION = '5.6' ]]; then ls -d library/Zend/* tests/ZendTest/* bin | parallel --gnu -P 0 'echo "Running {} CS checks"; php ./vendor/bin/php-cs-fixer fix {} -v --diff --dry-run --config-file=.php_cs;' || exit 1; fi
-
-after_script:
-  # Merges the individual clover reports of each component into a single clover.xml
-  - if [[ $TRAVIS_PHP_VERSION = '5.6' ]]; then php vendor/bin/phpcov merge --clover build/logs/clover.xml build/coverage; fi
-  - if [[ $TRAVIS_PHP_VERSION = '5.6' ]]; then php vendor/bin/coveralls; fi
+after_success:
+  - if [[ $DEPLOY_DOCS == "true" ]]; then echo "Preparing to build and deploy documentation" ; ./zf-mkdoc-theme/deploy.sh ; echo "Completed deploying documentation" ; fi
 
 notifications:
   irc: "irc.freenode.org#zftalk.dev"
   email: false
-
-matrix:
-  fast_finish: true
-  allow_failures:
-    - php: 7
-    - php: hhvm
