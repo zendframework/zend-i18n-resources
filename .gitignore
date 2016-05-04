@@ -7,4 +7,6 @@
 .*.un~
 nbproject
 composer.lock
+doc/html/
 vendor/
+zf-mkdoc-theme/
