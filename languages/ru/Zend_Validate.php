@@ -236,7 +236,7 @@ return [
     "The input has failed the IBAN check" => "Значение не прошло проверку IBAN",
 
     // Zend\Validator\Identical
-    "The two given tokens do not match" => "Значения не совпдают",
+    "The two given tokens do not match" => "Значения не совпадают",
     "No token was provided to match against" => "Не было указано значение для проверки на идентичность",
 
     // Zend\Validator\InArray
