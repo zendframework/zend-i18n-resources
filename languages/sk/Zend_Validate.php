@@ -135,7 +135,7 @@ return [
     "Minimum expected width for image should be '%minwidth%' but '%width%' detected" => "Minimálna šírka obrázku by mala byť '%minwidth%', ale je '%width%'",
     "Maximum allowed height for image should be '%maxheight%' but '%height%' detected" => "Maximálna výška obrázku by mala byť '%maxheight%', ale je '%height%'",
     "Minimum expected height for image should be '%minheight%' but '%height%' detected" => "Minimálna výška obrázku by mala byť '%minheight%', ale je '%height%'",
-    "The size of image could not be detected"=> "Nebolo možné zistiť rozmery obrázka",
+    "The size of image could not be detected" => "Nebolo možné zistiť rozmery obrázka",
     "File is not readable or does not exist" => "Súbor buď nie je čitateľný, alebo neexistuje",
 
     // Zend\Validator\File\IsCompressed
