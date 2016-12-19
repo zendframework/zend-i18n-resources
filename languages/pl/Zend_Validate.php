@@ -10,7 +10,7 @@
 /**
  * EN-Revision: 16.Oct.2013
  */
-return array(
+return [
     // Zend\I18n\Validator\Alnum
     "Invalid type given. String, integer or float expected" => "Podana wartość powinna być ciągiem znaków, liczbą całkowitą lub liczbą zmiennoprzecinkową",
     "The input contains characters which are non alphabetic and no digits" => "Podana wartość powinna zawierać znaki z alfabetu lub cyfry",
@@ -260,4 +260,4 @@ return array(
 
     // Zend\Validator\Uri
     "The input does not appear to be a valid Uri" => "Wartość nie jest poprawnym Uri",
-);
+];

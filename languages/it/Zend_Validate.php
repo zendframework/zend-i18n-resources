@@ -10,7 +10,7 @@
 /**
  * IT-Revision: 04.Apr.2013
  */
-return array(
+return [
     // Zend\I18n\Validator\Alnum
     "Invalid type given. String, integer or float expected" => "Tipo di dato non valido. Era atteso un dato di tipo string, float o integer",
     "The input contains characters which are non alphabetic and no digits" => "L'input contiene caratteri che non sono alfanumerici",
@@ -286,4 +286,4 @@ return array(
     // Zend\Validator\Uri
     "Invalid type given. String expected" => "Tipo di dato non valido. Era attesto un dato di tipo string",
     "The input does not appear to be a valid Uri" => "L'input non sembra essere un indirizzo URI valido",
-);
+];

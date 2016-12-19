@@ -10,7 +10,7 @@
 /**
  * EN-Revision: 16.Jul.2013
  */
-return array(
+return [
     // Zend\I18n\Validator\Alnum
     "Invalid type given. String, integer or float expected" => "Podan neveljaven tip. Predviden je niz, celo število ali število s premično vejico",
     "The input contains characters which are non alphabetic and no digits" => "Vnos vsebuje znake, ki niso abecedni ali številni",
@@ -286,4 +286,4 @@ return array(
     // Zend\Validator\Uri
     "Invalid type given. String expected" => "Podan je neveljaven tip. Pričakuje se niz",
     "The input does not appear to be a valid Uri" => "Vnos ni veljaven enotni identifikator vira (Uri)",
-);
+];

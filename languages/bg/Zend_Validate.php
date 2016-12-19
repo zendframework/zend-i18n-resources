@@ -10,7 +10,7 @@
 /**
  * EN-Revision: 16.Jun.2015
  */
-return array(
+return [
     // Zend\Authentication\Validator\Authentication
     "Invalid identity" => "Невалидна идентичност",
     "Identity is ambiguous" => "Неопределена идентичност",
@@ -305,4 +305,4 @@ return array(
     // Zend\Validator\Uri
     "Invalid type given. String expected" => "Зададен е невалиден тип данни. Очаква се низ",
     "The input does not appear to be a valid Uri" => "Въведената стойност не е валиден URI",
-);
+];
