@@ -16,7 +16,6 @@
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700&subset=latin,latin-ext" rel="stylesheet" type="text/css">
     <link href="../css/base.css" rel="stylesheet">
-    <link href="../css/zf-web.css" rel="stylesheet">
     <link href="../css/zf.css" rel="stylesheet">
     <link href="../css/prism-zf.css" rel="stylesheet">
 
@@ -57,7 +56,7 @@
 
             <!-- Main title -->
             <span class="navbar-brand">
-              <a class="logo-link" href="http://framework.zend.com" data-toggle="tooltip" data-placement="bottom" title="Zend Framework"><img src="../img/zf-logo-mark.svg" height="28" alt="Zend Framework" /></a>
+              <a class="logo-link" href="http://framework.zend.com" data-toggle="tooltip" data-placement="bottom" title="Zend Framework"><img src="../img/zf-logo-mark.png" height="28" alt="Zend Framework" /></a>
               <a href="..">zend-i18n-resources</a>
             </span>
         </div>
@@ -111,7 +110,7 @@
 </div>
 
     <!-- content:begin -->
-    <div id="page-top" class="container docs">
+    <div class="container">
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
@@ -137,7 +136,7 @@
         <div class="col-md-9" role="main">
 
 <ol class="breadcrumb" role="navigation" aria-label="breadcrumbs navigation">
-  <li><a href="..">zend-i18n-resources</a> &raquo;</li>
+  <li><a href="..">Docs</a> &raquo;</li>
   
     
   
@@ -148,7 +147,7 @@
 <p>To use the resources zend-i18n-resources exposes, retrieve them from the
 <code>Zend\I18n\Translator\Resources</code> class and pass them to
 <code>Zend\I18n\Translator\Translator::addTranslationFilePattern()</code>:</p>
-<pre class="codehilite"><code class="language-php">use Zend\I18n\Translator\Resources;
+<pre class="codehilite"><code class="language-php linenums">use Zend\I18n\Translator\Resources;
 use Zend\I18n\Translator\Translator;
 
 $translator = new Translator();
@@ -160,15 +159,13 @@ $translator-&gt;addTranslationFilePattern(
 
 echo $translator-&gt;translate('Invalid type given. String expected', 'default', 'es');</code></pre>
 
-
 <p>You can also use the <code>getPatternForCaptcha()</code> method to setup translation messages for
 <code>zend-captcha</code>:</p>
-<pre class="codehilite"><code class="language-php">$translator-&gt;addTranslationFilePattern(
+<pre class="codehilite"><code class="language-php linenums">$translator-&gt;addTranslationFilePattern(
     'phpArray',
     Resources::getBasePath(),
     Resources::getPatternForCaptcha()
 );</code></pre>
-
 
 <h2 id="automating-resource-injection">Automating resource injection</h2>
 <p>If you are fetching <code>Zend\I18n\Translator\Translator</code> via <code>zend-servicemanager</code>,
@@ -176,7 +173,7 @@ you may want to automate injecting the translation messages. This can be done
 using <code>zend-servicemanager</code>'s
 <a href="https://zendframework.github.io/zend-servicemanager/delegators/">delegator factories</a>.</p>
 <p>As an example, consider the following delegator factory:</p>
-<pre class="codehilite"><code class="language-php">use Interop\Container\ContainerInterface;
+<pre class="codehilite"><code class="language-php linenums">use Interop\Container\ContainerInterface;
 use Zend\I18n\Translator\Resources;
 use Zend\ServiceManager\DelegatorFactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
@@ -215,7 +212,6 @@ class TranslatorDelegator implements DelegatorFactoryInterface
     }
 }</code></pre>
 
-
 <blockquote>
 <h3 id="forwards-compatibility">Forwards compatibility</h3>
 <p>The above definition will work with both zend-servicemanager v2 and v3
@@ -223,7 +219,7 @@ releases. If you are targeting only v3 and up, you can remove the
 <code>createDelegatorWithName()</code> implementation.</p>
 </blockquote>
 <p>You would then register this in your configuration:</p>
-<pre class="codehilite"><code class="language-php">return [
+<pre class="codehilite"><code class="language-php linenums">return [
     'service_manager' =&gt; [
         'delegators' =&gt; [
             'MvcTranslator' =&gt; [
@@ -251,49 +247,13 @@ releases. If you are targeting only v3 and up, you can remove the
     </div>
     <!-- content:end -->
 
-    <div id="footerwrap">
-    <div class="container">
-        <div class="row site-map">
-            <div class="col-lg-3">
-              <p>
-                <strong>Zend Framework</strong><br />
-                <a href="http://framework.zend.com/">framework.zend.com</a><br />
-                <a href="https://docs.zendframework.com">docs.zendframework.com</a><br />
-                <a href="https://packages.zendframework.com">packages.zendframework.com</a><br />
-                <a href="https://apigility.org">apigility.org</a><br />
-              </p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-12 centered">
-                <a class="back-to-top" href="#page-top"><i class="fa fa-chevron-circle-up fa-4" aria-hidden="true"></i></a>
-            </div>
-        </div>
-
-        <div class="spacing"></div>
-
-        <div class="row">
-            <div class="col-lg-8">
-                <h4>Copyright</h4>
-                <div class="hline-w"></div>
-
-                <p>&copy; 2006-2016 by <a href="http://www.zend.com">Zend</a>, a <a href="http://www.roguewave.com/">Rogue Wave Company</a>.</p>
-            </div>
-
-            <div class="col-lg-4">
-                <h4>Contacts</h4>
-                <div class="hline-w"></div>
-                <p>
-                    <a href="irc://irc.freenode.net/zftalk" class="btn-social btn-outline" alt="IRC" title="IRC"><i class="fa fa-comment"></i></a>
-                    <a href="https://github.com/zendframework" class="btn-social btn-outline" alt="Github" title="Github"><i class="fa fa-github"></i></a>
-                    <a href="https://twitter.com/zfdevteam" class="btn-social btn-outline" alt="Twitter" title="Twitter"><i class="fa fa-twitter"></i></a>
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
+    <footer class="col-md-12 text-center">
+        <hr>
+        <p>
+        <small>Copyright (c) 2016 <a href="http://www.zend.com/">Zend Technologies USA Inc.</a><br></small>
+        </p>
+        <p><small><a href="http://framework.zend.com">Learn more about Zend Framework</a></small></p>
+    </footer>
 
     <script src="../js/jquery-1.10.2.min.js"></script>
     <script src="../js/bootstrap-3.0.3.min.js"></script>
@@ -333,7 +293,7 @@ releases. If you are targeting only v3 and up, you can remove the
     <div class="zf-components">
   <div class="zf-components-grid">
     <div class="zf-logo">
-      <a href="http://framework.zend.com" data-toggle="tooltip" data-placement="bottom" title="Go to the ZF homepage"><img src="../img/zf-logo-mark.svg" alt="Zend Framework" width="250" /></a>
+      <a href="http://framework.zend.com" data-toggle="tooltip" data-placement="bottom" title="Go to the ZF homepage"><img src="http://framework.zend.com/images/logos/zf-logo-mark.png" alt="Zend Framework" width="250" /></a>
     </div>
 
     <div class="component-list"></div>
@@ -438,7 +398,7 @@ releases. If you are targeting only v3 and up, you can remove the
     // Fetch the component list and display it.
     function loadComponentList () {
       $.ajax({
-        url: "//docs.zendframework.com/zf-mkdoc-theme/scripts/zf-component-list.json",
+        url: "//zendframework.github.io/zf-mkdoc-theme/scripts/zf-component-list.json",
         dataType: "text json",
         success: parseComponentList,
         error: function (e) {
