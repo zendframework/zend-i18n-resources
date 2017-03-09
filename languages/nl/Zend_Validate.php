@@ -202,7 +202,7 @@ return [
 
     // Zend\Validator\GreaterThan
     "The input is not greater than '%min%'" => "De input is niet groter dan '%min%'",
-    "The input is not greater or equal than '%min%'" => "De input is niet groter dan of gelijk aan '%min%'",
+    "The input is not greater than or equal to '%min%'" => "De input is niet groter dan of gelijk aan '%min%'",
 
     // Zend\Validator\Hex
     "Invalid type given. String expected" => "Ongeldig type gegeven, waarde moet een string zijn",

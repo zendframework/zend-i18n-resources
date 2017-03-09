@@ -210,7 +210,7 @@ return [
 
     // Zend\Validator\GreaterThan
     "The input is not greater than '%min%'" => "Значение не превышает '%min%'",
-    "The input is not greater or equal than '%min%'" => "Значение не превышает или не равно '%min%'",
+    "The input is not greater than or equal to '%min%'" => "Значение не превышает или не равно '%min%'",
 
     // Zend\Validator\Hex
     "Invalid type given. String expected" => "Недопустимый тип данных. Значение должно быть строкой",

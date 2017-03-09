@@ -186,7 +186,7 @@ return [
 
     // Zend\Validator\GreaterThan
     "The input is not greater than '%min%'" => "Podana wartość nie jest większa niż '%min%'",
-    "The input is not greater or equal than '%min%'" => "Podana wartość nie jest większa lub równa od '%min%'",
+    "The input is not greater than or equal to '%min%'" => "Podana wartość nie jest większa lub równa od '%min%'",
 
     // Zend\Validator\Hex
     "The input contains non-hexadecimal characters" => "Wartość nie jest wartością heksadecymalną",

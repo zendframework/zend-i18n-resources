@@ -217,7 +217,7 @@ return [
 
     // Zend\Validator\GreaterThan
     "The input is not greater than '%min%'" => "Indtastningen er ikke større end '%min%'",
-    "The input is not greater or equal than '%min%'" => "Indtastningen indeholder ikke mere end, eller er præcis, '%min%'",
+    "The input is not greater than or equal to '%min%'" => "Indtastningen indeholder ikke mere end, eller er præcis, '%min%'",
 
     // Zend\Validator\Hex
     "Invalid type given. String expected" => "Ugyldig indtastning. Indtast streng",

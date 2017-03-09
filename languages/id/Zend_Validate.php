@@ -175,7 +175,7 @@ return [
 
     // Zend\Validator\GreaterThan
     "The input is not greater than '%min%'" => "Isian tidak lebih besar dari '%min%'",
-    "The input is not greater or equal than '%min%'" => "Isian tidak lebih besar atau sama dengan '%min%'",
+    "The input is not greater than or equal to '%min%'" => "Isian tidak lebih besar atau sama dengan '%min%'",
 
     // Zend\Validator\Hex
     "The input contains non-hexadecimal characters" => "Isian berisi karakter non-heksadesimal",

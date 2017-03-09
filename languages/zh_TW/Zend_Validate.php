@@ -183,7 +183,7 @@ return [
 
     // Zend_Validator_GreaterThan
     "The input is not greater than '%min%'" => "輸入應大於'%min%'",
-    "The input is not greater or equal than '%min%'" => "輸入應大於等於'%min%'",
+    "The input is not greater than or equal to '%min%'" => "輸入應大於等於'%min%'",
 
     // Zend_Validator_Hex
     "Invalid type given. String expected" => "輸入無效，請輸入一個字符串",
