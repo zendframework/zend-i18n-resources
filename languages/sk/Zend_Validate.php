@@ -8,14 +8,14 @@
  */
 
 /**
- * SK-Revision: 3.Dec.2016
+ * SK-Revision: 9.Mar.2017
  */
 return [
     // Zend\Authentication\Validator\Authentication
     "Invalid identity" => "Neplatná identita",
-    "Identity is ambiguous" => "Identita je nejednoznačná",
+    "Identity is ambiguous" => "Identita nie je jednoznačná",
     "Invalid password" => "Neplatné heslo",
-    "Authentication failed" => "Prihlasenie zlyhalo",
+    "Authentication failed" => "Prihlásenie zlyhalo",
 
     // Zend\I18n\Validator\Alnum
     "Invalid type given. String, integer or float expected" => "Chybný typ. Bol očakávaný reťazec, celé alebo desatinné číslo",
@@ -31,11 +31,11 @@ return [
     "Invalid type given. String expected" => "Chybný typ. Bol očakávaný reťazec",
     "The input does not appear to be a valid datetime" => "Hodnota nie je platný časový údaj",
 
-    // Zend\I18n\Validator\Float
+    // Zend\I18n\Validator\IsFloat
     "Invalid type given. String, integer or float expected" => "Chybný typ. Bol očakávaný reťazec, celé alebo desatinné číslo",
     "The input does not appear to be a float" => "Hodnota nie je desatinné číslo",
 
-    // Zend\I18n\Validator\Int
+    // Zend\I18n\Validator\IsInt
     "Invalid type given. String or integer expected" => "Chybný typ. Bol očakávaný reťazec, alebo celé číslo",
     "The input does not appear to be an integer" => "Hodnota nie je celé číslo",
 
