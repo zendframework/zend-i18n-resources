@@ -12,7 +12,7 @@
     },
     "require-dev": {
         "zendframework/zend-coding-standard": "~1.0.0",
-        "phpunit/phpunit": "~6.0"
+        "phpunit/phpunit": "^5.7.15 || ^6.0.8"
     },
     "autoload": {
         "classmap": [
