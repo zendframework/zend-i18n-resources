@@ -202,7 +202,7 @@ return [
 
     // Zend\Validator\GreaterThan
     "The input is not greater than '%min%'" => " 入力値は '%min%' より大きくありません",
-    "The input is not greater or equal than '%min%'" => "入力値は '%min%' 以上ではありません",
+    "The input is not greater than or equal to '%min%'" => "入力値は '%min%' 以上ではありません",
 
     // Zend\Validator\Hex
     "Invalid type given. String expected" => "不正な形式です。文字列が期待されています",

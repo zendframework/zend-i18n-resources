@@ -202,7 +202,7 @@ return [
 
     // Zend\Validator\GreaterThan
     "The input is not greater than '%min%'" => "A megadott érték nem nagyobb, mint '%min%'",
-    "The input is not greater or equal than '%min%'" => "A megadott érték nem nagyobb vagy egyenlő, mint '%min%'",
+    "The input is not greater than or equal to '%min%'" => "A megadott érték nem nagyobb vagy egyenlő, mint '%min%'",
 
     // Zend\Validator\Hex
     "Invalid type given. String expected" => "Érvénytelen típus. Érvényes típusok: karakterláncok",

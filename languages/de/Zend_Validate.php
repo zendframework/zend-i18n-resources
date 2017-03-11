@@ -205,7 +205,7 @@ return [
 
     // Zend\Validator\GreaterThan
     "The input is not greater than '%min%'" => "Die Eingabe ist nicht größer als '%min%'",
-    "The input is not greater or equal than '%min%'" => "Die Eingabe ist nicht größer oder gleich '%min%'",
+    "The input is not greater than or equal to '%min%'" => "Die Eingabe ist nicht größer oder gleich '%min%'",
 
     // Zend\Validator\Hex
     "Invalid type given. String expected" => "Ungültige Eingabe. Zeichenkette erwartet",
