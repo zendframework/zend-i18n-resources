@@ -11,7 +11,8 @@
         "php": "^5.5 || ^7.0"
     },
     "require-dev": {
-        "squizlabs/php_codesniffer": "^2.3.1"
+        "zendframework/zend-coding-standard": "~1.0.0",
+        "phpunit/phpunit": "^5.7.15 || ^6.0.8"
     },
     "autoload": {
         "classmap": [
@@ -20,9 +21,13 @@
     },
     "scripts": {
         "check": [
-            "@cs-check"
+            "@cs-check",
+            "@test"
         ],
         "cs-check": "phpcs",
-        "cs-fix": "phpcbf"
+        "cs-fix": "phpcbf",
+        "test": "phpunit --colors=always",
+        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
+        "upload-coverage": "coveralls -v"
     }
 }
