@@ -9,7 +9,7 @@
 
 
 /**
- * FR-Revision: 29.Sept.2013
+ * FR-Revision: 19.May.2017
  */
 return [
     // Zend\I18n\Validator\Alnum
@@ -33,6 +33,11 @@ return [
     // Zend\I18n\Validator\Int
     "Invalid type given. String or integer expected" => "Type invalide. Chaîne ou entier attendu",
     "The input does not appear to be an integer" => "L'entrée n'est pas un entier",
+
+    // Zend\I18n\Validator\PhoneNumber
+    "The input does not match a phone number format" => "L'entrée ne correspond pas à la structure attendue d'un numéro de téléphone",
+    "The country provided is currently unsupported" => "le pays fourni n'est pour le moment pas supporté",
+    "Invalid type given. String expected" => "Type invalide. Chaîne attendue",
 
     // Zend\I18n\Validator\PostCode
     "Invalid type given. String or integer expected" => "Type invalide. Chaîne ou entier attendu",
