@@ -298,9 +298,9 @@ return [
     "The input is more than %max% characters long" => "Vnos je daljši od števila znakov %max%",
 
     // Zend\Validator\Timezone
-    "Invalid timezone given." => "Podan neveljavni časovni pas.",
-    "Invalid timezone location given." => "Podana neveljavna lokacija časovnega pasu.",
-    "Invalid timezone abbreviation given." => "Podana neveljavna okrajšava časovnega pasu.",
+    "Invalid timezone given." => "Podano neveljavno časovno območje.",
+    "Invalid timezone location given." => "Podana neveljavna lokacija časovnega območja.",
+    "Invalid timezone abbreviation given." => "Podana neveljavna okrajšava časovnega območja.",
 
     // Zend\Validator\Uri
     "Invalid type given. String expected" => "Podan je neveljaven tip. Pričakuje se niz",
