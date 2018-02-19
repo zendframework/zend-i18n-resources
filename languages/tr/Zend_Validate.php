@@ -147,9 +147,9 @@ return [
     "File '%value%' is not readable or does not exist" => "'%value%' dosyası okunamıyor ya da yok",
 
     // Zend_Validator_File_MimeType
-    "File '%value%' has a false mimetype of '%type%'" => "'%value%' dosyası yanlış mime-tipine sahip: '%type%'",
-    "The mimetype of file '%value%' could not be detected" => "'%value%' dosyasının mime-tipi algılanamadı",
-    "File '%value%' is not readable or does not exist" => "'%value%' dosyası okunamıyor ya da yok",
+    "File has an incorrect mimetype of '%type%'" => "Dosya yanlış mime-tipine sahip: '%type%'",
+    "The mimetype could not be detected from the file" => "Dosyanın mime-tipi algılanamadı",
+    "File is not readable or does not exist" => "Dosya okunamıyor ya da yok",
 
     // Zend_Validator_File_NotExists
     "File '%value%' exists" => "'%value%' dosyası var",
