@@ -3,21 +3,39 @@
     "description": "Provides validator translations for zend-i18n's Translator",
     "license": "BSD-3-Clause",
     "keywords": [
-        "zf2",
+        "zf",
+        "zendframework",
         "resources",
         "translations"
     ],
+    "support": {
+        "docs": "https://docs.zendframework.com/zend-i18n-resources/",
+        "issues": "https://github.com/zendframework/zend-i18n-resources/issues",
+        "source": "https://github.com/zendframework/zend-i18n-resources",
+        "rss": "https://github.com/zendframework/zend-i18n-resources/releases.atom",
+        "chat": "https://zendframework-slack.herokuapp.com",
+        "forum": "https://discourse.zendframework.com/c/questions/components"
+    },
     "require": {
         "php": "^5.6 || ^7.0"
     },
     "require-dev": {
-        "zendframework/zend-coding-standard": "~1.0.0",
-        "phpunit/phpunit": "^5.7.15 || ^6.0.8"
+        "phpunit/phpunit": "^5.7.15 || ^6.0.8",
+        "zendframework/zend-coding-standard": "~1.0.0"
     },
     "autoload": {
         "classmap": [
             "src/Resources.php"
         ]
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.5.x-dev",
+            "dev-develop": "2.6.x-dev"
+        }
     },
     "scripts": {
         "check": [
@@ -27,7 +45,6 @@
         "cs-check": "phpcs",
         "cs-fix": "phpcbf",
         "test": "phpunit --colors=always",
-        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
-        "upload-coverage": "coveralls -v"
+        "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
     }
 }

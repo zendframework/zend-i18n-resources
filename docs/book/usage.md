@@ -34,7 +34,7 @@ $translator->addTranslationFilePattern(
 If you are fetching `Zend\I18n\Translator\Translator` via `zend-servicemanager`,
 you may want to automate injecting the translation messages. This can be done
 using `zend-servicemanager`'s
-[delegator factories](https://zendframework.github.io/zend-servicemanager/delegators/).
+[delegator factories](https://docs.zendframework.com/zend-servicemanager/delegators/).
 
 As an example, consider the following delegator factory:
 
@@ -64,7 +64,7 @@ class TranslatorDelegator implements DelegatorFactoryInterface
             Resources::getBasePath(),
             Resources::getPatternForCaptcha()
         );
-        
+
         return $translator;
     }
 
