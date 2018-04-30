@@ -28,6 +28,8 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Fixed
 
+- [#30](https://github.com/zendframework/zend-i18n-resources/pull/30) adds a missing French translation for the `PhoneNumber` validator.
+
 - [#23](https://github.com/zendframework/zend-i18n-resources/pull/23) fixes a typo in the Polish translations.
 
 - [#18](https://github.com/zendframework/zend-i18n-resources/pull/18) fixes typos and ambiguities in the Italian translations.
