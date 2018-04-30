@@ -6,6 +6,8 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Added
 
+- [#11](https://github.com/zendframework/zend-i18n-resources/pull/11) adds Serbian Cyrillic translations of validation messages.
+
 - [#37](https://github.com/zendframework/zend-i18n-resources/pull/37) adds support for PHP 7.0, 7.1, and 7.2.
 
 - [#15](https://github.com/zendframework/zend-i18n-resources/pull/15) adds documentation at https://docs.zendframework.com/zend-i18n-resources/
