@@ -8,7 +8,7 @@
  */
 
 /**
- * FR-Revision: 12.Aug.2015
+ * FR-Revision: 19.May.2017
  */
 return [
     // Zend\Authentication\Validator\Authentication
@@ -40,8 +40,8 @@ return [
     "The input does not appear to be an integer" => "L'entrée n'est pas un entier",
 
     // Zend\I18n\Validator\PhoneNumber
-    "The input does not match a phone number format" => "L'entrée ne correspond pas à un format de numéro de téléphone",
-    "The country provided is currently unsupported" => "Le pays spécifié n'est pas supporté actuellement",
+    "The input does not match a phone number format" => "L'entrée ne correspond pas à la structure attendue d'un numéro de téléphone",
+    "The country provided is currently unsupported" => "Le pays fourni n'est pour le moment pas supporté",
     "Invalid type given. String expected" => "Type invalide. Chaîne attendue",
 
     // Zend\I18n\Validator\PostCode
