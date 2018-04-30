@@ -7,5 +7,6 @@
 
     <!-- Paths to check -->
     <file>src</file>
+    <file>test</file>
     <file>languages</file>
 </ruleset>
