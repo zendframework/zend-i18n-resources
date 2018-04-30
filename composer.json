@@ -28,6 +28,11 @@
             "src/Resources.php"
         ]
     },
+    "autoload-dev": {
+        "psr-4": {
+            "ZendTest\\I18n\\Translator\\": "test/"
+        }
+    },
     "config": {
         "sort-packages": true
     },
