@@ -71,7 +71,7 @@ return [
 
     // Zend\Validator\Db\AbstractDb
     "No record matching the input was found" => "Nie znaleziono rekordu dla podanej wartości",
-    "A record matching the input was found" => "Znaleziono rekord dla podanej wartośći",
+    "A record matching the input was found" => "Znaleziono rekord dla podanej wartości",
 
     // Zend\Validator\Digits
 
