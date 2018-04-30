@@ -28,6 +28,8 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Fixed
 
+- [#14](https://github.com/zendframework/zend-i18n-resources/pull/14) provides updates to the Slovak translations.
+
 - [#17](https://github.com/zendframework/zend-i18n-resources/pull/17) fixes a typo in the Russian translation of the CSRF validator message.
 
 - [#22](https://github.com/zendframework/zend-i18n-resources/pull/22) fixes typo in Russian translation of the `Identical` validator message.
