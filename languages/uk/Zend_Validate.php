@@ -203,7 +203,7 @@ return [
 
     // Zend\Validator\GreaterThan
     "The input is not greater than '%min%'" => "Значення не є більшим за '%min%'",
-    "The input is not greater or equal than '%min%'" => "Значення не дорівнює і не є більшим за '%min%'",
+    "The input is not greater than or equal to '%min%'" => "Значення не дорівнює і не є більшим за '%min%'",
 
     // Zend\Validator\Hex
     "Invalid type given. String expected" => "Неправильний тип даних. Значення має бути рядком",
