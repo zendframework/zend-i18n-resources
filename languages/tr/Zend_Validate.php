@@ -183,7 +183,7 @@ return [
 
     // Zend_Validator_GreaterThan
     "The input is not greater than '%min%'" => "Girdi '%min%' değerinden büyük değil",
-    "The input is not greater or equal than '%min%'" => "Girdi '%min%' değerinden büyük ya da eşit değil",
+    "The input is not greater than or equal to '%min%'" => "Girdi '%min%' değerinden büyük ya da eşit değil",
 
     // Zend_Validator_Hex
     "Invalid type given. String expected" => "Yanlış tür verildi. Dizge bekleniyor",
