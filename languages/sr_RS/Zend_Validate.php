@@ -10,7 +10,7 @@
 /**
  * sr_RS-Revision: 28.October.2015
  */
-return array(
+return [
     // Zend\Authentication\Validator\Authentication
     "Invalid identity" => "Погрешан идентитет",
     "Identity is ambiguous" => "Идентитет је двосмислен",
@@ -305,4 +305,4 @@ return array(
     // Zend\Validator\Uri
     "Invalid type given. String expected" => "Унет је погрешан тип. Очекиван је String",
     "The input does not appear to be a valid Uri" => "Унет је неисправан Uri",
-);
+];
