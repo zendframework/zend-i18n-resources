@@ -216,7 +216,7 @@ return [
 
     // Zend\Validator\GreaterThan
     "The input is not greater than '%min%'" => "Vnos ni večji od '%min%'",
-    "The input is not greater or equal than '%min%'" => "Vnos ni večji ali enak '%min%'",
+    "The input is not greater than or equal to '%min%'" => "Vnos ni večji ali enak '%min%'",
 
     // Zend\Validator\Hex
     "Invalid type given. String expected" => "Podan je neveljaven tip. Pričakuje se niz",

@@ -202,7 +202,7 @@ return [
 
     // Zend\Validator\GreaterThan
     "The input is not greater than '%min%'" => "Hodnota není větší než '%min%'",
-    "The input is not greater or equal than '%min%'" => "Hodnota není větší nebo rovna '%min%'",
+    "The input is not greater than or equal to '%min%'" => "Hodnota není větší nebo rovna '%min%'",
 
     // Zend\Validator\Hex
     "Invalid type given. String expected" => "Chybný typ. Byl očekáván řetězec",
