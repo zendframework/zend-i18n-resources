@@ -202,7 +202,7 @@ return [
 
     // Zend\Validator\GreaterThan
     "The input is not greater than '%min%'" => "El valor especificado no es más grande que '%min%'",
-    "The input is not greater or equal than '%min%'" => "El valor especificado no es más grande o igual que '%min%'",
+    "The input is not greater than or equal to '%min%'" => "El valor especificado no es más grande o igual que '%min%'",
 
     // Zend\Validator\Hex
     "Invalid type given. String expected" => "El tipo especificado es incorrecto, el valor debería ser una cadena de texto",

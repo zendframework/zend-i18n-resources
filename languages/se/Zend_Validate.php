@@ -195,7 +195,7 @@ return [
 
     // Zend_Validator_GreaterThan
     "The input is not greater than '%min%'" => "Indatan är inte större än '%min%'",
-    "The input is not greater or equal than '%min%'" => "Indatan är inte större eller lika med '%min%'",
+    "The input is not greater than or equal to '%min%'" => "Indatan är inte större eller lika med '%min%'",
 
     // Zend_Validator_Hex
     "Invalid type given. String expected" => "Ogiltig typ given. Sträng förväntad",

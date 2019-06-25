@@ -44,6 +44,8 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Fixed
 
+- [#39](https://github.com/zendframework/zend-i18n-resources/pull/39) fixes translation
+  keys for Zend\Validator\GreaterThan messages
 - [#40](https://github.com/zendframework/zend-i18n-resources/pull/40) fixes typo in
   german translation for Zend\Validator\DateStep messages
 

@@ -216,7 +216,7 @@ return [
 
     // Zend\Validator\GreaterThan
     "The input is not greater than '%min%'" => "L'entrée n'est pas supérieure à '%min%'",
-    "The input is not greater or equal than '%min%'" => "L'entrée n'est pas supérieure ou égale à '%min%'",
+    "The input is not greater than or equal to '%min%'" => "L'entrée n'est pas supérieure ou égale à '%min%'",
 
     // Zend\Validator\Hex
     "Invalid type given. String expected" => "Type invalide. Chaîne attendue",
