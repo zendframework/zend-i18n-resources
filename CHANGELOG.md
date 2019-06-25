@@ -28,7 +28,7 @@ All notable changes to this project will be documented in this file, in reverse 
 
 ### Added
 
-- Nothing.
+- [#41](https://github.com/zendframework/zend-i18n-resources/pull/41) adds support for PHP 7.3
 
 ### Changed
 
