@@ -1,5 +1,9 @@
 # zend-i18n-resources
 
+> ## Repository abandoned 2019-12-31
+>
+> This repository has moved to laminas/laminas-i18n-resources.
+
 [![Build Status](https://secure.travis-ci.org/zendframework/zend-i18n-resources.svg?branch=master)](https://secure.travis-ci.org/zendframework/zend-i18n-resources)
 [![Coverage Status](https://coveralls.io/repos/github/zendframework/zend-i18n-resources/badge.svg?branch=master)](https://coveralls.io/github/zendframework/zend-i18n-resources?branch=master)
 
